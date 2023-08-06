@@ -13,6 +13,6 @@ namespace Model
         public DateTime FechaLlegada { get; set; }
         public DateTime FechaSalida { get; set; }
         public int CodHabitacion { get; set; }
-        public bool MetodoPago { get; set; }
+        public string MetodoPago { get; set; }
     }
 }
