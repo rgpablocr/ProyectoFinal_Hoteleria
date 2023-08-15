@@ -14,5 +14,7 @@ namespace Model
         public DateTime FechaSalida { get; set; }
         public int CodHabitacion { get; set; }
         public string MetodoPago { get; set; }
+
+        public decimal Cancelado { get; set; }
     }
 }

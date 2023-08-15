@@ -46,6 +46,7 @@
     <Compile Include="ConnectionManager.cs" />
     <Compile Include="HabitacionDA.cs" />
     <Compile Include="HotelDA.cs" />
+    <Compile Include="MobiliarioDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReservacionDA.cs" />
   </ItemGroup>

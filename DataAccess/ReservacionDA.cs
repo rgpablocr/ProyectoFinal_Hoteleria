@@ -20,7 +20,7 @@ namespace DataAccess
             {
                 conn.Open();
 
-                string sqlQuery = "Select r.codreservacion, r.cedula, r.fechallegada, r.fechasalida,r.codhabitacion, r.metodopago from reservaciones r, clientes c where r.cedula = '"+cedula+"' and r.cedula = c.cedula order by r.fechallegada DESC";
+                string sqlQuery = "Select r.codreservacion, r.cedula, r.fechallegada, r.fechasalida,r.codhabitacion, r.metodopago, r.cancelado from reservaciones r, clientes c where r.cedula = '"+cedula+"' and r.cedula = c.cedula order by r.fechallegada DESC";
 
                 using (SqlCommand cmd = new SqlCommand(sqlQuery, conn))  //query y conexion
                 {
@@ -36,7 +36,8 @@ namespace DataAccess
                             FechaLlegada = Convert.ToDateTime(dataReader["fechallegada"]),
                             FechaSalida = Convert.ToDateTime(dataReader["fechasalida"]),
                             CodHabitacion = Convert.ToInt32(dataReader["codhabitacion"]),
-                            MetodoPago = Convert.ToByte(dataReader["metodopago"]) == 0 ? "Efectivo" : "Tarjeta Crédito"
+                            MetodoPago = Convert.ToByte(dataReader["metodopago"]) == 0 ? "Efectivo" : "Tarjeta Crédito",
+                            Cancelado = Convert.ToDecimal(dataReader["cancelado"]),
                         };
                         reservaciones.Add(reservacion);
                     };
@@ -44,6 +45,39 @@ namespace DataAccess
             }
             return reservaciones;
         }
-        
+
+        public Reservacion cargarReservacionesPorId(string id)
+        {
+           Reservacion reservacion = new Reservacion();
+
+            using (SqlConnection conn = _connectionManager.getConnection())
+            {
+                conn.Open();
+
+                string sqlQuery = "Select r.codreservacion, r.cedula, r.fechallegada, r.fechasalida,r.codhabitacion, r.metodopago, r.cancelado from reservaciones r where r.codreservacion = '" + id + "' order by r.fechallegada DESC";
+
+                using (SqlCommand cmd = new SqlCommand(sqlQuery, conn))  //query y conexion
+                {
+
+                    SqlDataReader dataReader = cmd.ExecuteReader();
+
+                    while (dataReader.Read()) //pregunta .Read si hay algo
+                    {
+                        reservacion = new Reservacion
+                        {
+                            CodReservacion = Convert.ToString(dataReader["codreservacion"]),
+                            Cedula = Convert.ToString(dataReader["cedula"]),
+                            FechaLlegada = Convert.ToDateTime(dataReader["fechallegada"]),
+                            FechaSalida = Convert.ToDateTime(dataReader["fechasalida"]),
+                            CodHabitacion = Convert.ToInt32(dataReader["codhabitacion"]),
+                            MetodoPago = Convert.ToByte(dataReader["metodopago"]) == 0 ? "Efectivo" : "Tarjeta Crédito",
+                            Cancelado = Convert.ToDecimal(dataReader["cancelado"]),
+                        };
+                    };
+                };
+            }
+            return reservacion;
+        }
+
     }
 }

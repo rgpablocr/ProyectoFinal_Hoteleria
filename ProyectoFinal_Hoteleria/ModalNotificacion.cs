@@ -16,28 +16,28 @@ namespace ProyectoFinal_Hoteleria
         private string _titulo = null;
         private string _mensaje = null;
         private Primary _tipoColor;
+        private Accent _acentoColor;
 
-        public ModalNotificacion(string mensaje, string titulo ,Primary tipoColor)
+        public ModalNotificacion(string mensaje, string titulo ,Primary tipoColor, Accent acentoColor)
         {
             _titulo = titulo;
             _tipoColor = tipoColor;
             _mensaje = mensaje;
+            _acentoColor = acentoColor;
 
             InitializeComponent();
-        }
-
-        private void ModalError_Load(object sender, EventArgs e)
-        {
-            SkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            SkinManager.ColorScheme = new ColorScheme(_tipoColor, Primary.Grey900, Primary.Green100, Accent.Blue400, TextShade.WHITE);
-
             lblTitulo.Text = _titulo;
             lblMensaje.Text = _mensaje;
         }
 
+        private void ModalError_Load(object sender, EventArgs e)
+        {
+
+            SkinManager.ColorScheme = new ColorScheme(Primary.Grey50, _tipoColor, _tipoColor, _acentoColor, TextShade.BLACK);
+        }
+
         private void materialButton1_Click(object sender, EventArgs e)
         {
-            SkinManager.ColorScheme = new ColorScheme(Primary.Blue900, Primary.Grey900, Primary.Green100, Accent.Blue400, TextShade.WHITE);
             this.Close();
             
         }

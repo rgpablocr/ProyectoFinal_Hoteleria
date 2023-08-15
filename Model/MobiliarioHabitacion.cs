@@ -11,5 +11,7 @@ namespace Model
         public int Codigo { get; set; }
         public int CodHabitacion { get; set; }
         public int CodMobiliario { get; set; }
+        public string Descripcion { get; set; }
+        public decimal? Precio { get; set; }
     }
 }

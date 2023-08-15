@@ -22,5 +22,20 @@ namespace BusinessLogic
         {
             return _habitacionDA.cargarHabitacionPorId(id);
         }
+        public List<Habitacion> cargarHabitaciones(int id)
+        {
+            return _habitacionDA.cargarHabitaciones(id);
+        }
+        public void actualizarPrecioHabitacion(int id)
+        {
+            _habitacionDA.actualizarPrecioHabitacion(id);
+        }
+
+        public Habitacion cargarHotelPorHabitacion(int id)
+        {
+            return _habitacionDA.cargarHotelPorHabitacion(id);
+        }
+
+
     }
 }

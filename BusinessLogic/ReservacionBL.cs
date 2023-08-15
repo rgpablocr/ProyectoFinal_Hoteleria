@@ -18,6 +18,11 @@ namespace BusinessLogic
         {
             return _reservacionDA.cargarReservacionesPorCliente(cedula);
         }
+        public Reservacion cargarReservacionesPorId(string id)
+        {
+            return _reservacionDA.cargarReservacionesPorId(id);
+        }
+
 
 
     }

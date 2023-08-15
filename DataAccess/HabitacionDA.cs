@@ -79,5 +79,80 @@ namespace DataAccess
             return habitaciones;
         }
 
+        public List<Habitacion> cargarHabitaciones(int id)
+        {
+            List<Habitacion> habitaciones = new List<Habitacion>();
+
+            using (SqlConnection conn = _connectionManager.getConnection())
+            {
+                conn.Open();
+
+                string sqlQuery = "Select codhabitacion, codhotel from habitaciones where codhabitacion <> " +id ;
+
+                using (SqlCommand cmd = new SqlCommand(sqlQuery, conn))  //query y conexion
+                {
+
+                    SqlDataReader dataReader = cmd.ExecuteReader();
+
+                    while (dataReader.Read()) //pregunta .Read si hay algo
+                    {
+                        Habitacion habitacion = new Habitacion
+                        {
+                            CodHabitacion = Convert.ToInt32(dataReader["codhabitacion"]),
+                            CodHotel = Convert.ToString(dataReader["codhotel"]),
+                            
+                        };
+                        habitaciones.Add(habitacion);
+                    };
+                };
+            }
+            return habitaciones;
+        }
+
+        public void actualizarPrecioHabitacion(int id)
+        {
+            using (SqlConnection conn = _connectionManager.getConnection())
+            {
+                conn.Open();
+
+                using (SqlCommand cmd = new SqlCommand("usp_ModificarPrecioHabitacion", conn))  //query y conexion
+                {
+
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("CodHabitacion", id);
+
+                    cmd.ExecuteNonQuery();
+
+                };
+            }
+        }
+
+        public Habitacion cargarHotelPorHabitacion(int id)
+        {
+            Habitacion habitacion = new Habitacion();
+
+            using (SqlConnection conn = _connectionManager.getConnection())
+            {
+                conn.Open();
+
+                string sqlQuery = "Select  h.codhotel from habitaciones h where h.codhabitacion = " + id + "";
+
+                using (SqlCommand cmd = new SqlCommand(sqlQuery, conn))  //query y conexion
+                {
+
+                    SqlDataReader dataReader = cmd.ExecuteReader();
+
+                    while (dataReader.Read()) //pregunta .Read si hay algo
+                    {
+                        habitacion = new Habitacion
+                        {
+                            CodHotel = Convert.ToString(dataReader["codhotel"])
+                        };
+                    };
+                };
+            }
+            return habitacion;
+        }
+
     }
 }

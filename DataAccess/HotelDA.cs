@@ -46,5 +46,37 @@ namespace DataAccess
             return hoteles;
         }
 
+        public Hotel cargarHotelPorId(string id)
+        {
+            Hotel hotel = new Hotel();
+
+            using (SqlConnection conn = _connectionManager.getConnection())
+            {
+                conn.Open();
+
+                string sqlQuery = "Select * from hoteles where codhotel= '"+id+"'";
+
+                using (SqlCommand cmd = new SqlCommand(sqlQuery, conn))  //query y conexion
+                {
+
+                    SqlDataReader dataReader = cmd.ExecuteReader();
+
+                    while (dataReader.Read()) //pregunta .Read si hay algo
+                    {
+                         hotel = new Hotel
+                        {
+                            CodHotel = Convert.ToString(dataReader["codhotel"]),
+                            Direccion = Convert.ToString(dataReader["direccion"]),
+                            Nombre = Convert.ToString(dataReader["nombre"]),
+                            Telefono = Convert.ToString(dataReader["telefono"])
+                        };
+
+                    };
+                }
+            }
+
+            return hotel;
+        }
+
     }
 }

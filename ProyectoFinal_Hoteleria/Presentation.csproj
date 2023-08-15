@@ -77,6 +77,12 @@
     <Compile Include="ModalNotificacion.Designer.cs">
       <DependentUpon>ModalNotificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMontos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMontos.Designer.cs">
+      <DependentUpon>FormMontos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -84,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMobiliario.resx">
       <DependentUpon>FormMobiliario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMontos.resx">
+      <DependentUpon>FormMontos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModalNotificacion.resx">
       <DependentUpon>ModalNotificacion.cs</DependentUpon>
@@ -175,6 +184,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\chair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\intercambio-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escritorio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

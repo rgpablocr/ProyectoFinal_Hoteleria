@@ -32,15 +32,19 @@ namespace ProyectoFinal_Hoteleria
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblMensaje = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // materialButton1
             // 
             this.materialButton1.AutoSize = false;
             this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton1.BackColor = System.Drawing.Color.Transparent;
             this.materialButton1.CharacterCasing = MaterialSkin.Controls.MaterialButton.CharacterCasingEnum.Normal;
             this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.materialButton1.Depth = 0;
+            this.materialButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.materialButton1.ForeColor = System.Drawing.Color.Transparent;
             this.materialButton1.HighEmphasis = true;
             this.materialButton1.Icon = null;
             this.materialButton1.Location = new System.Drawing.Point(523, 143);
@@ -52,8 +56,8 @@ namespace ProyectoFinal_Hoteleria
             this.materialButton1.TabIndex = 0;
             this.materialButton1.Text = "Aceptar";
             this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = false;
-            this.materialButton1.UseVisualStyleBackColor = true;
+            this.materialButton1.UseAccentColor = true;
+            this.materialButton1.UseVisualStyleBackColor = false;
             this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
             // 
             // lblTitulo
@@ -84,15 +88,24 @@ namespace ProyectoFinal_Hoteleria
             this.lblMensaje.Text = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
             this.lblMensaje.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 64);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(623, 131);
+            this.panel1.TabIndex = 10;
+            // 
             // ModalNotificacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(629, 198);
+            this.Controls.Add(this.materialButton1);
             this.Controls.Add(this.lblMensaje);
             this.Controls.Add(this.lblTitulo);
-            this.Controls.Add(this.materialButton1);
+            this.Controls.Add(this.panel1);
             this.Name = "ModalNotificacion";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -109,5 +122,6 @@ namespace ProyectoFinal_Hoteleria
         private MaterialSkin.Controls.MaterialButton materialButton1;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblMensaje;
+        private System.Windows.Forms.Panel panel1;
     }
 }

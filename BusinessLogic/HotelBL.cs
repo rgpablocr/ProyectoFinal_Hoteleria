@@ -16,5 +16,10 @@ namespace BusinessLogic
         {
             return _hotelDA.cargarHoteles();
         }
+        public Hotel cargarHotelPorId(string id)
+        {
+            return _hotelDA.cargarHotelPorId(id);
+        }
+
     }
 }
