@@ -29,16 +29,25 @@ namespace ProyectoFinal_Hoteleria
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("");
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblDireccionHotel = new System.Windows.Forms.Label();
-            this.lblTelefonoHotel = new System.Windows.Forms.Label();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblTelefono = new System.Windows.Forms.Label();
-            this.lblCedula = new System.Windows.Forms.Label();
-            this.lblCorreo = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.lblUnitario = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.cardDatosHabitacion = new MaterialSkin.Controls.MaterialCard();
+            this.cbxLavado = new System.Windows.Forms.CheckBox();
+            this.cbxNevera = new System.Windows.Forms.CheckBox();
+            this.cbxSoleado = new System.Windows.Forms.CheckBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtPrecioFinal = new System.Windows.Forms.TextBox();
+            this.txtCodHotel = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtCodHabitacion = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.lvReservaciones = new MaterialSkin.Controls.MaterialListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -46,39 +55,20 @@ namespace ProyectoFinal_Hoteleria
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label7 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.cardDatosHabitacion = new MaterialSkin.Controls.MaterialCard();
-            this.cbxLavado = new System.Windows.Forms.CheckBox();
-            this.cbxNevera = new System.Windows.Forms.CheckBox();
-            this.cbxSoleado = new System.Windows.Forms.CheckBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txtPrecioFinal = new System.Windows.Forms.TextBox();
-            this.txtCodHotel = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.txtCodHabitacion = new System.Windows.Forms.TextBox();
-            this.lblUnitario = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.lblTotal = new System.Windows.Forms.Label();
+            this.lblTelefono = new System.Windows.Forms.Label();
+            this.lblCedula = new System.Windows.Forms.Label();
+            this.lblCorreo = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblTelefonoHotel = new System.Windows.Forms.Label();
+            this.lblDireccionHotel = new System.Windows.Forms.Label();
             this.lblNombreHotel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.cardDatosHabitacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.hotel__1_;
-            this.pictureBox6.Location = new System.Drawing.Point(37, 23);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(40, 42);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 15;
-            this.pictureBox6.TabStop = false;
             // 
             // label2
             // 
@@ -86,7 +76,7 @@ namespace ProyectoFinal_Hoteleria
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(83, 37);
+            this.label2.Location = new System.Drawing.Point(93, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 21);
             this.label2.TabIndex = 14;
@@ -118,160 +108,53 @@ namespace ProyectoFinal_Hoteleria
             this.panel1.Size = new System.Drawing.Size(933, 750);
             this.panel1.TabIndex = 16;
             // 
-            // lblDireccionHotel
+            // lblTotal
             // 
-            this.lblDireccionHotel.AutoSize = true;
-            this.lblDireccionHotel.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDireccionHotel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblDireccionHotel.Location = new System.Drawing.Point(35, 123);
-            this.lblDireccionHotel.Name = "lblDireccionHotel";
-            this.lblDireccionHotel.Size = new System.Drawing.Size(95, 16);
-            this.lblDireccionHotel.TabIndex = 36;
-            this.lblDireccionHotel.Text = "Direccion hotel";
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblTotal.Location = new System.Drawing.Point(804, 682);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTotal.Size = new System.Drawing.Size(73, 19);
+            this.lblTotal.TabIndex = 52;
+            this.lblTotal.Text = "88888888";
             // 
-            // lblTelefonoHotel
+            // label11
             // 
-            this.lblTelefonoHotel.AutoSize = true;
-            this.lblTelefonoHotel.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefonoHotel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblTelefonoHotel.Location = new System.Drawing.Point(34, 158);
-            this.lblTelefonoHotel.Name = "lblTelefonoHotel";
-            this.lblTelefonoHotel.Size = new System.Drawing.Size(64, 16);
-            this.lblTelefonoHotel.TabIndex = 37;
-            this.lblTelefonoHotel.Text = "88888888";
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label11.Location = new System.Drawing.Point(668, 677);
+            this.label11.Name = "label11";
+            this.label11.Padding = new System.Windows.Forms.Padding(0, 5, 5, 15);
+            this.label11.Size = new System.Drawing.Size(50, 39);
+            this.label11.TabIndex = 51;
+            this.label11.Text = "Total";
             // 
-            // lblNombre
+            // lblUnitario
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.BackColor = System.Drawing.Color.Transparent;
-            this.lblNombre.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblNombre.Location = new System.Drawing.Point(660, 46);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblNombre.Size = new System.Drawing.Size(225, 19);
-            this.lblNombre.TabIndex = 38;
-            this.lblNombre.Text = "Pablo Rodr[iguez fdfdfdfdfd";
-            this.lblNombre.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblUnitario.AutoSize = true;
+            this.lblUnitario.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnitario.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblUnitario.Location = new System.Drawing.Point(804, 643);
+            this.lblUnitario.Name = "lblUnitario";
+            this.lblUnitario.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblUnitario.Size = new System.Drawing.Size(73, 19);
+            this.lblUnitario.TabIndex = 50;
+            this.lblUnitario.Text = "88888888";
             // 
-            // lblTelefono
+            // label16
             // 
-            this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefono.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblTelefono.Location = new System.Drawing.Point(660, 158);
-            this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblTelefono.Size = new System.Drawing.Size(59, 16);
-            this.lblTelefono.TabIndex = 41;
-            this.lblTelefono.Text = "Telefono";
-            // 
-            // lblCedula
-            // 
-            this.lblCedula.AutoSize = true;
-            this.lblCedula.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCedula.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblCedula.Location = new System.Drawing.Point(660, 86);
-            this.lblCedula.Name = "lblCedula";
-            this.lblCedula.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblCedula.Size = new System.Drawing.Size(61, 16);
-            this.lblCedula.TabIndex = 40;
-            this.lblCedula.Text = "direccion";
-            // 
-            // lblCorreo
-            // 
-            this.lblCorreo.AutoSize = true;
-            this.lblCorreo.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorreo.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblCorreo.Location = new System.Drawing.Point(660, 123);
-            this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblCorreo.Size = new System.Drawing.Size(144, 16);
-            this.lblCorreo.TabIndex = 39;
-            this.lblCorreo.Text = "rgpablocr@gmailk.com";
-            // 
-            // lvReservaciones
-            // 
-            this.lvReservaciones.AutoSizeTable = false;
-            this.lvReservaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lvReservaciones.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lvReservaciones.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader6});
-            this.lvReservaciones.Depth = 0;
-            this.lvReservaciones.FullRowSelect = true;
-            this.lvReservaciones.HideSelection = false;
-            listViewItem5.StateImageIndex = 0;
-            this.lvReservaciones.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem5});
-            this.lvReservaciones.Location = new System.Drawing.Point(38, 501);
-            this.lvReservaciones.MinimumSize = new System.Drawing.Size(200, 100);
-            this.lvReservaciones.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.lvReservaciones.MouseState = MaterialSkin.MouseState.OUT;
-            this.lvReservaciones.Name = "lvReservaciones";
-            this.lvReservaciones.OwnerDraw = true;
-            this.lvReservaciones.Size = new System.Drawing.Size(839, 100);
-            this.lvReservaciones.TabIndex = 42;
-            this.lvReservaciones.UseCompatibleStateImageBehavior = false;
-            this.lvReservaciones.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Cod. Reservación";
-            this.columnHeader1.Width = 150;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Cédula";
-            this.columnHeader2.Width = 130;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Fecha Llegada";
-            this.columnHeader3.Width = 130;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Fecha Salida";
-            this.columnHeader4.Width = 130;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Cod. Habitación";
-            this.columnHeader5.Width = 140;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "Método Pago";
-            this.columnHeader6.Width = 150;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(33, 458);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(205, 21);
-            this.label7.TabIndex = 43;
-            this.label7.Text = "Detalle de reservación";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(33, 209);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(196, 21);
-            this.label12.TabIndex = 45;
-            this.label12.Text = "Detalle de habitación";
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label16.Location = new System.Drawing.Point(668, 638);
+            this.label16.Name = "label16";
+            this.label16.Padding = new System.Windows.Forms.Padding(0, 5, 5, 15);
+            this.label16.Size = new System.Drawing.Size(111, 39);
+            this.label16.TabIndex = 49;
+            this.label16.Text = "Total Unitario";
             // 
             // cardDatosHabitacion
             // 
@@ -332,16 +215,6 @@ namespace ProyectoFinal_Hoteleria
             this.cbxSoleado.Text = "Es Soleado";
             this.cbxSoleado.UseVisualStyleBackColor = true;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.bedroom1;
-            this.pictureBox3.Location = new System.Drawing.Point(771, 28);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(51, 53);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 23;
-            this.pictureBox3.TabStop = false;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -397,53 +270,160 @@ namespace ProyectoFinal_Hoteleria
             this.txtCodHabitacion.Size = new System.Drawing.Size(150, 20);
             this.txtCodHabitacion.TabIndex = 1;
             // 
-            // lblUnitario
+            // label12
             // 
-            this.lblUnitario.AutoSize = true;
-            this.lblUnitario.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnitario.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblUnitario.Location = new System.Drawing.Point(804, 643);
-            this.lblUnitario.Name = "lblUnitario";
-            this.lblUnitario.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblUnitario.Size = new System.Drawing.Size(73, 19);
-            this.lblUnitario.TabIndex = 50;
-            this.lblUnitario.Text = "88888888";
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label12.Location = new System.Drawing.Point(33, 209);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(196, 21);
+            this.label12.TabIndex = 45;
+            this.label12.Text = "Detalle de habitación";
             // 
-            // label16
+            // label7
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label16.Location = new System.Drawing.Point(668, 638);
-            this.label16.Name = "label16";
-            this.label16.Padding = new System.Windows.Forms.Padding(0, 5, 5, 15);
-            this.label16.Size = new System.Drawing.Size(111, 39);
-            this.label16.TabIndex = 49;
-            this.label16.Text = "Total Unitario";
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(33, 458);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(205, 21);
+            this.label7.TabIndex = 43;
+            this.label7.Text = "Detalle de reservación";
             // 
-            // label11
+            // lvReservaciones
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label11.Location = new System.Drawing.Point(668, 677);
-            this.label11.Name = "label11";
-            this.label11.Padding = new System.Windows.Forms.Padding(0, 5, 5, 15);
-            this.label11.Size = new System.Drawing.Size(50, 39);
-            this.label11.TabIndex = 51;
-            this.label11.Text = "Total";
+            this.lvReservaciones.AutoSizeTable = false;
+            this.lvReservaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lvReservaciones.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lvReservaciones.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6});
+            this.lvReservaciones.Depth = 0;
+            this.lvReservaciones.FullRowSelect = true;
+            this.lvReservaciones.HideSelection = false;
+            listViewItem1.StateImageIndex = 0;
+            this.lvReservaciones.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1});
+            this.lvReservaciones.Location = new System.Drawing.Point(38, 501);
+            this.lvReservaciones.MinimumSize = new System.Drawing.Size(200, 100);
+            this.lvReservaciones.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.lvReservaciones.MouseState = MaterialSkin.MouseState.OUT;
+            this.lvReservaciones.Name = "lvReservaciones";
+            this.lvReservaciones.OwnerDraw = true;
+            this.lvReservaciones.Size = new System.Drawing.Size(839, 100);
+            this.lvReservaciones.TabIndex = 42;
+            this.lvReservaciones.UseCompatibleStateImageBehavior = false;
+            this.lvReservaciones.View = System.Windows.Forms.View.Details;
             // 
-            // lblTotal
+            // columnHeader1
             // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblTotal.Location = new System.Drawing.Point(804, 682);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblTotal.Size = new System.Drawing.Size(73, 19);
-            this.lblTotal.TabIndex = 52;
-            this.lblTotal.Text = "88888888";
+            this.columnHeader1.Text = "Cod. Reservación";
+            this.columnHeader1.Width = 150;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Cédula";
+            this.columnHeader2.Width = 130;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Fecha Llegada";
+            this.columnHeader3.Width = 130;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Fecha Salida";
+            this.columnHeader4.Width = 130;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Cod. Habitación";
+            this.columnHeader5.Width = 140;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Método Pago";
+            this.columnHeader6.Width = 150;
+            // 
+            // lblTelefono
+            // 
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefono.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblTelefono.Location = new System.Drawing.Point(660, 158);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblTelefono.Size = new System.Drawing.Size(59, 16);
+            this.lblTelefono.TabIndex = 41;
+            this.lblTelefono.Text = "Telefono";
+            // 
+            // lblCedula
+            // 
+            this.lblCedula.AutoSize = true;
+            this.lblCedula.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCedula.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblCedula.Location = new System.Drawing.Point(660, 86);
+            this.lblCedula.Name = "lblCedula";
+            this.lblCedula.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblCedula.Size = new System.Drawing.Size(61, 16);
+            this.lblCedula.TabIndex = 40;
+            this.lblCedula.Text = "direccion";
+            // 
+            // lblCorreo
+            // 
+            this.lblCorreo.AutoSize = true;
+            this.lblCorreo.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorreo.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblCorreo.Location = new System.Drawing.Point(660, 123);
+            this.lblCorreo.Name = "lblCorreo";
+            this.lblCorreo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblCorreo.Size = new System.Drawing.Size(144, 16);
+            this.lblCorreo.TabIndex = 39;
+            this.lblCorreo.Text = "rgpablocr@gmailk.com";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.BackColor = System.Drawing.Color.Transparent;
+            this.lblNombre.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblNombre.Location = new System.Drawing.Point(660, 46);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblNombre.Size = new System.Drawing.Size(225, 19);
+            this.lblNombre.TabIndex = 38;
+            this.lblNombre.Text = "Pablo Rodr[iguez fdfdfdfdfd";
+            this.lblNombre.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblTelefonoHotel
+            // 
+            this.lblTelefonoHotel.AutoSize = true;
+            this.lblTelefonoHotel.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefonoHotel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblTelefonoHotel.Location = new System.Drawing.Point(34, 158);
+            this.lblTelefonoHotel.Name = "lblTelefonoHotel";
+            this.lblTelefonoHotel.Size = new System.Drawing.Size(64, 16);
+            this.lblTelefonoHotel.TabIndex = 37;
+            this.lblTelefonoHotel.Text = "88888888";
+            // 
+            // lblDireccionHotel
+            // 
+            this.lblDireccionHotel.AutoSize = true;
+            this.lblDireccionHotel.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDireccionHotel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblDireccionHotel.Location = new System.Drawing.Point(35, 123);
+            this.lblDireccionHotel.Name = "lblDireccionHotel";
+            this.lblDireccionHotel.Size = new System.Drawing.Size(95, 16);
+            this.lblDireccionHotel.TabIndex = 36;
+            this.lblDireccionHotel.Text = "Direccion hotel";
             // 
             // lblNombreHotel
             // 
@@ -456,22 +436,43 @@ namespace ProyectoFinal_Hoteleria
             this.lblNombreHotel.TabIndex = 34;
             this.lblNombreHotel.Text = "Nombre Hotel";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.bedroom1;
+            this.pictureBox3.Location = new System.Drawing.Point(771, 28);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(51, 53);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 23;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.hotel__3_1;
+            this.pictureBox6.Location = new System.Drawing.Point(37, 23);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(50, 42);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 15;
+            this.pictureBox6.TabStop = false;
+            // 
             // FormMontos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(939, 817);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormMontos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Montos";
             this.Load += new System.EventHandler(this.FormMontos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.cardDatosHabitacion.ResumeLayout(false);
             this.cardDatosHabitacion.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }

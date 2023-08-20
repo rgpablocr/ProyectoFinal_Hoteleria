@@ -154,5 +154,28 @@ namespace DataAccess
             return habitacion;
         }
 
+        public int cargarNumeroHabitaciones()
+        {
+            int total = 0;
+            using (SqlConnection conn = _connectionManager.getConnection())
+            {
+                conn.Open();
+
+                string sqlQuery = "SELECT COUNT(DISTINCT codhabitacion) AS total FROM reservaciones";
+
+                using (SqlCommand cmd = new SqlCommand(sqlQuery, conn))  //query y conexion
+                {
+
+                    SqlDataReader dataReader = cmd.ExecuteReader();
+
+                    while (dataReader.Read()) //pregunta .Read si hay algo
+                    {
+                        total = Convert.ToInt32(dataReader["total"]);
+                    }
+                };
+            }
+            return total;
+        }
+
     }
 }

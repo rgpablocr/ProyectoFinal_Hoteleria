@@ -79,5 +79,28 @@ namespace DataAccess
             return reservacion;
         }
 
+        public int cargarNumeroReservaciones()
+        {
+            int total = 0;
+            using (SqlConnection conn = _connectionManager.getConnection())
+            {
+                conn.Open();
+
+                string sqlQuery = "Select count(*) as total from reservaciones";
+
+                using (SqlCommand cmd = new SqlCommand(sqlQuery, conn))  //query y conexion
+                {
+
+                    SqlDataReader dataReader = cmd.ExecuteReader();
+
+                    while (dataReader.Read()) //pregunta .Read si hay algo
+                    {
+                        total = Convert.ToInt32(dataReader["total"]);
+                    }
+                };
+            }
+            return total;
+        }
+
     }
 }

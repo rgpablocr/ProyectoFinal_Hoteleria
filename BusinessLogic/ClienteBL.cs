@@ -17,5 +17,10 @@ namespace BusinessLogic
             return _clienteDa.cargarClientePorID(id);
         }
 
+        public int cargarNumeroClientes()
+        {
+            return _clienteDa.cargarNumeroClientes();
+        }
+
     }
 }

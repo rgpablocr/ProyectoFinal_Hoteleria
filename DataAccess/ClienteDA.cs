@@ -46,5 +46,29 @@ namespace DataAccess
             }
             return cliente;
         }
+
+
+        public int cargarNumeroClientes()
+        {
+            int total = 0;
+            using (SqlConnection conn = _connectionManager.getConnection())
+            {
+                conn.Open();
+
+                string sqlQuery = "Select count(*) as total from clientes";
+
+                using (SqlCommand cmd = new SqlCommand(sqlQuery, conn))  //query y conexion
+                {
+
+                    SqlDataReader dataReader = cmd.ExecuteReader();
+
+                    while (dataReader.Read()) //pregunta .Read si hay algo
+                    {
+                        total = Convert.ToInt32(dataReader["total"]);
+                    }
+                };
+            }
+            return total;
+        }
     }
 }

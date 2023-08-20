@@ -37,31 +37,32 @@ namespace ProyectoFinal_Hoteleria
                 cbxBuscarHabitacion.Items.Add(h.CodHotel.ToString());
                 cbxHotelMobiliario.Items.Add(h.CodHotel.ToString());
             }
+
+            cargarEstadisticas();
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
+        private void cargarEstadisticas()
         {
+            ClienteBL clienteBL = new ClienteBL();
+            HabitacionBL habitacionBL = new HabitacionBL();
+            ReservacionBL reservacionBL = new ReservacionBL();
 
+            int numeroClientes = clienteBL.cargarNumeroClientes();
+            int numeroReservaciones = reservacionBL.cargarNumeroReservaciones();
+            int numeroHabitaciones = habitacionBL.cargarNumeroHabitaciones();
 
-        }
-
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-            
-
-          
-        }
-
-        private void materialCard1_Paint(object sender, PaintEventArgs e)
-        {
-            
+            lblNumeroClientes.Text = numeroClientes.ToString();
+            lblNumeroHabitaciones.Text = numeroHabitaciones.ToString();
+            lblNumeroReservaciones.Text = numeroReservaciones.ToString();
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            try
+            {
+
             cardCliente.Visible = false;
             lvReservaciones.Visible = false;
-
 
             string cedula = txtBuscar.Text.ToString();
 
@@ -70,7 +71,7 @@ namespace ProyectoFinal_Hoteleria
                 ModalNotificacion modal = new ModalNotificacion("El campo no puede estar vacío", "Error", Primary.Yellow600, Accent.Yellow700);
                 modal.TopMost = true;
                 modal.ShowDialog();
-                
+
             }
             else
             {
@@ -79,7 +80,7 @@ namespace ProyectoFinal_Hoteleria
 
                 Cliente cliente = clienteBL.cargarClientePorID(cedula);
 
-                if (cliente.Cedula != null && cliente.Nombre != null && cliente.Apellido1 != null  && cliente.Apellido2 != null 
+                if (cliente.Cedula != null && cliente.Nombre != null && cliente.Apellido1 != null && cliente.Apellido2 != null
                     && cliente.Telefono != null && cliente.Direccion != null && cliente.Email != null)
                 {
                     txtCedula.Text = cliente.Cedula.ToString();
@@ -118,122 +119,22 @@ namespace ProyectoFinal_Hoteleria
                     modal.ShowDialog();
                 }
             }
-        }
 
-        private void materialTabControl1_Click(object sender, EventArgs e)
-        {
+            txtBuscar.Text = "";
 
-        }
-
-        private void materialComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-                lvHabitaciones.Visible = false;
-
-                string id = cbxBuscarHabitacion.SelectedItem.ToString();
-
-                HabitacionBL habitacionBL = new HabitacionBL();
-
-                List<Habitacion> habitaciones = habitacionBL.cargarHabitacionPorHotel(id);
-
-                if (habitaciones.Count > 0)
-                {
-                    lvHabitaciones.Items.Clear();
-                    foreach (Habitacion h in habitaciones)
-                    {
-                        ListViewItem item = new ListViewItem(h.CodHabitacion.ToString());
-                        item.SubItems.Add(h.CodHotel.ToString());
-                        item.SubItems.Add(h.Soleada.ToString());
-                        item.SubItems.Add(h.Lavado.ToString());
-                        item.SubItems.Add(h.Nevera.ToString());
-                        item.SubItems.Add(h.Categoria.ToString());
-                        item.SubItems.Add("₡ " + h.PrecioFinal.ToString());
-                        lvHabitaciones.Items.Add(item);
-                        lvHabitaciones.Visible = true;
-                    }
-
-                }
-                else
-                {
-                    ModalNotificacion modal = new ModalNotificacion("El hotel no tiene habitaciones", "Notificación", Primary.Yellow600, Accent.Yellow700);
-                    modal.TopMost = true;
-                    modal.ShowDialog();
-                }   
-        }
-
-        private void materialListView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (lvHabitaciones.SelectedItems.Count > 0)
-            {
-                string id = lvHabitaciones.SelectedItems[0].Text;
-
-                HabitacionBL habitacionBL = new HabitacionBL();
-                Habitacion habitacion = habitacionBL.cargarHabitacionPorId(id);
-
-                txtCodHabitacion.Text = habitacion.CodHabitacion.ToString();
-                txtCodHotel.Text = habitacion.CodHabitacion.ToString();
-                txtPrecioFinal.Text = "₡ " +  habitacion.PrecioFinal.ToString();
-                cbxSoleado.Checked = habitacion.Soleada == "Sí" ? true : false;
-                cbxNevera.Checked = habitacion.Nevera == "Sí" ? true : false;
-                cbxLavado.Checked = habitacion.Lavado == "Sí" ? true : false;
-
-                cardDatosHabitacion.Visible = true;
             }
-
-
-        }
-
-        private void materialButton1_Click(object sender, EventArgs e)
-        {
-            lvHabitaciones.Visible = false;
-
-            string id = txtHabitaciones.Text.ToString();
-            int a;
-
-            if (String.IsNullOrWhiteSpace(id) || String.IsNullOrEmpty(id) || int.TryParse(id, out a) == false)
+            catch (Exception ex )
             {
-                ModalNotificacion modal = new ModalNotificacion("El campo no puede estar vacío o no coincide el tipo de dato", "Error", Primary.Yellow600, Accent.Yellow700);
+
+                ModalNotificacion modal = new ModalNotificacion(ex.ToString(), "Error", Primary.Red600, Accent.Red700);
                 modal.TopMost = true;
                 modal.ShowDialog();
             }
-            else
-            {
-
-                HabitacionBL habitacionBL = new HabitacionBL();
-
-                Habitacion habitacion = habitacionBL.cargarHabitacionPorId(id);
-
-                if (habitacion.CodHabitacion != null && habitacion.CodHotel != null && habitacion.Soleada != null && habitacion.Lavado != null
-                    && habitacion.Nevera != null && habitacion.Categoria != null && habitacion.PrecioFinal != null)
-                {
-
-                    lvHabitaciones.Items.Clear();
-
-                    ListViewItem item = new ListViewItem(habitacion.CodHabitacion.ToString());
-                    item.SubItems.Add(habitacion.CodHotel.ToString());
-                    item.SubItems.Add(habitacion.Soleada.ToString());
-                    item.SubItems.Add(habitacion.Lavado.ToString());
-                    item.SubItems.Add(habitacion.Nevera.ToString());
-                    item.SubItems.Add(habitacion.Categoria.ToString());
-                    item.SubItems.Add("₡ " +  habitacion.PrecioFinal.ToString());
-                    lvHabitaciones.Items.Add(item);
-                    lvHabitaciones.Visible = true;
-
-                }
-                else
-                {
-                    ModalNotificacion modal = new ModalNotificacion("La habitación ingresada no existe", "Notificación", Primary.Yellow600, Accent.Yellow700);
-                    modal.TopMost = true;
-                    modal.ShowDialog();
-                }
-            }
-
-            txtHabitaciones.Text = "";
-
         }
         //PANTALLA MOBILIARIO
         private void btnBucarMobiliario_Click(object sender, EventArgs e)
         {
-
+            try { 
             lvlHabitacionesMobiliario.Visible = false;
 
             string id = txtHabitacionMobiliario.Text.ToString();
@@ -278,10 +179,19 @@ namespace ProyectoFinal_Hoteleria
             }
 
             txtHabitacionMobiliario.Text = "";
+            }
+            catch (Exception ex)
+            {
+
+                ModalNotificacion modal = new ModalNotificacion(ex.ToString(), "Error", Primary.Red600, Accent.Red700);
+                modal.TopMost = true;
+                modal.ShowDialog();
+            }
         }
 
         private void cbxHotelMobiliario_SelectedIndexChanged(object sender, EventArgs e)
         {
+            try { 
             lvlHabitacionesMobiliario.Visible = false;
 
             string id = cbxHotelMobiliario.SelectedItem.ToString();
@@ -313,10 +223,20 @@ namespace ProyectoFinal_Hoteleria
                 modal.TopMost = true;
                 modal.ShowDialog();
             }
+
+            }
+            catch (Exception ex)
+            {
+
+                ModalNotificacion modal = new ModalNotificacion(ex.ToString(), "Error", Primary.Red600, Accent.Red700);
+                modal.TopMost = true;
+                modal.ShowDialog();
+            }
         }
 
         private void lvlHabitacionesMobiliario_SelectedIndexChanged(object sender, EventArgs e)
         {
+            try { 
             if (lvlHabitacionesMobiliario.SelectedItems.Count > 0)
             {
                 int codhabitacion = int.Parse(lvlHabitacionesMobiliario.SelectedItems[0].Text);
@@ -347,10 +267,20 @@ namespace ProyectoFinal_Hoteleria
                 }
 
             }
+
+            }
+            catch (Exception ex)
+            {
+
+                ModalNotificacion modal = new ModalNotificacion(ex.ToString(), "Error", Primary.Red600, Accent.Red700);
+                modal.TopMost = true;
+                modal.ShowDialog();
+            }
         }
 
         private void lvReservaciones_SelectedIndexChanged(object sender, EventArgs e)
         {
+            try { 
             if (lvReservaciones.SelectedItems.Count > 0)
             {
                 string codreservacion = lvReservaciones.SelectedItems[0].Text;
@@ -359,27 +289,163 @@ namespace ProyectoFinal_Hoteleria
                 formMontos.ShowDialog();
 
             }
+
+            }
+            catch (Exception ex)
+            {
+
+                ModalNotificacion modal = new ModalNotificacion(ex.ToString(), "Error", Primary.Red600, Accent.Red700);
+                modal.TopMost = true;
+                modal.ShowDialog();
+            }
         }
 
-        private void lvMobiliario_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbxBuscarHabitacion_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+            try 
+            { 
+              lvHabitaciones.Visible = false;
+
+                string id = cbxBuscarHabitacion.SelectedItem.ToString();
+
+                HabitacionBL habitacionBL = new HabitacionBL();
+
+                List<Habitacion> habitaciones = habitacionBL.cargarHabitacionPorHotel(id);
+
+                if (habitaciones.Count > 0)
+                {
+                    lvHabitaciones.Items.Clear();
+                    foreach (Habitacion h in habitaciones)
+                    {
+                        ListViewItem item = new ListViewItem(h.CodHabitacion.ToString());
+                        item.SubItems.Add(h.CodHotel.ToString());
+                        item.SubItems.Add(h.Soleada.ToString());
+                        item.SubItems.Add(h.Lavado.ToString());
+                        item.SubItems.Add(h.Nevera.ToString());
+                        item.SubItems.Add(h.Categoria.ToString());
+                        item.SubItems.Add("₡ " + h.PrecioFinal.ToString());
+                        lvHabitaciones.Items.Add(item);
+                        lvHabitaciones.Visible = true;
+                    }
+
+                }
+                else
+                {
+                    ModalNotificacion modal = new ModalNotificacion("El hotel no tiene habitaciones", "Notificación", Primary.Yellow600, Accent.Yellow700);
+                    modal.TopMost = true;
+                    modal.ShowDialog();
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                ModalNotificacion modal = new ModalNotificacion(ex.ToString(), "Error", Primary.Red600, Accent.Red700);
+                modal.TopMost = true;
+                modal.ShowDialog();
+            }
         }
 
-        private void materialCard1_Paint_1(object sender, PaintEventArgs e)
+        private void lvHabitaciones_SelectedIndexChanged(object sender, EventArgs e)
         {
+            try 
+            { 
+            if (lvHabitaciones.SelectedItems.Count > 0)
+            {
+                string id = lvHabitaciones.SelectedItems[0].Text;
 
+                HabitacionBL habitacionBL = new HabitacionBL();
+                Habitacion habitacion = habitacionBL.cargarHabitacionPorId(id);
+
+                txtCodHabitacion.Text = habitacion.CodHabitacion.ToString();
+                txtCodHotel.Text = habitacion.CodHabitacion.ToString();
+                txtPrecioFinal.Text = "₡ " + habitacion.PrecioFinal.ToString();
+                cbxSoleado.Checked = habitacion.Soleada == "Sí" ? true : false;
+                cbxNevera.Checked = habitacion.Nevera == "Sí" ? true : false;
+                cbxLavado.Checked = habitacion.Lavado == "Sí" ? true : false;
+
+                cardDatosHabitacion.Visible = true;
+            }
+            }
+            catch (Exception ex)
+            {
+
+                ModalNotificacion modal = new ModalNotificacion(ex.ToString(), "Error", Primary.Red600, Accent.Red700);
+                modal.TopMost = true;
+                modal.ShowDialog();
+            }
         }
 
-        private void materialButton1_Click_1(object sender, EventArgs e)
+        private void btnBuscarHabitacion_Click(object sender, EventArgs e)
         {
-            int habitacion = int.Parse( txtCodHabitacion.Text);
+            try
+            {
+            lvHabitaciones.Visible = false;
+
+            string id = txtHabitaciones.Text.ToString();
+            int a;
+
+            if (String.IsNullOrWhiteSpace(id) || String.IsNullOrEmpty(id) || int.TryParse(id, out a) == false)
+            {
+                ModalNotificacion modal = new ModalNotificacion("El campo no puede estar vacío o no coincide el tipo de dato", "Error", Primary.Yellow600, Accent.Yellow700);
+                modal.TopMost = true;
+                modal.ShowDialog();
+            }
+            else
+            {
+
+                HabitacionBL habitacionBL = new HabitacionBL();
+
+                Habitacion habitacion = habitacionBL.cargarHabitacionPorId(id);
+
+                if (habitacion.CodHabitacion != null && habitacion.CodHotel != null && habitacion.Soleada != null && habitacion.Lavado != null
+                    && habitacion.Nevera != null && habitacion.Categoria != null && habitacion.PrecioFinal != null)
+                {
+
+                    lvHabitaciones.Items.Clear();
+
+                    ListViewItem item = new ListViewItem(habitacion.CodHabitacion.ToString());
+                    item.SubItems.Add(habitacion.CodHotel.ToString());
+                    item.SubItems.Add(habitacion.Soleada.ToString());
+                    item.SubItems.Add(habitacion.Lavado.ToString());
+                    item.SubItems.Add(habitacion.Nevera.ToString());
+                    item.SubItems.Add(habitacion.Categoria.ToString());
+                    item.SubItems.Add("₡ " + habitacion.PrecioFinal.ToString());
+                    lvHabitaciones.Items.Add(item);
+                    lvHabitaciones.Visible = true;
+
+                }
+                else
+                {
+                    ModalNotificacion modal = new ModalNotificacion("La habitación ingresada no existe", "Notificación", Primary.Yellow600, Accent.Yellow700);
+                    modal.TopMost = true;
+                    modal.ShowDialog();
+                }
+            }
+
+            txtHabitaciones.Text = "";
+            }
+            catch (Exception ex)
+            {
+
+                ModalNotificacion modal = new ModalNotificacion(ex.ToString(), "Error", Primary.Red600, Accent.Red700);
+                modal.TopMost = true;
+                modal.ShowDialog();
+            }
+        }
+
+        private void btnEditarMobiliario_Click(object sender, EventArgs e)
+        {
+            try
+            {
+ 
+            int habitacion = int.Parse(txtCodHabitacion.Text);
 
             MobiliarioBL mobiliarioBL = new MobiliarioBL();
             List<MobiliarioHabitacion> mobiliarioHabitaciones = mobiliarioBL.cargarMobililarioPorHabitacion(habitacion);
             if (mobiliarioHabitaciones.Count > 0)
             {
-                
+
                 FormMobiliario formMobiliario = new FormMobiliario(mobiliarioHabitaciones, habitacion);
                 formMobiliario.TopMost = true;
                 formMobiliario.ShowDialog();
@@ -389,7 +455,16 @@ namespace ProyectoFinal_Hoteleria
                 ModalNotificacion modal = new ModalNotificacion("La habitación no tiene mobiliario", "Notificación", Primary.Yellow600, Accent.Yellow700);
                 modal.TopMost = true;
                 modal.ShowDialog();
-                
+
+            }
+
+            }
+            catch (Exception ex)
+            {
+
+                ModalNotificacion modal = new ModalNotificacion(ex.ToString(), "Error", Primary.Red600, Accent.Red700);
+                modal.TopMost = true;
+                modal.ShowDialog();
             }
         }
     }

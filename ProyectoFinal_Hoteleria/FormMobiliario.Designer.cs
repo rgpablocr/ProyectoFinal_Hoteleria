@@ -29,8 +29,8 @@ namespace ProyectoFinal_Hoteleria
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("");
             this.lvHabitacionesTraslado = new MaterialSkin.Controls.MaterialListView();
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -82,9 +82,9 @@ namespace ProyectoFinal_Hoteleria
             this.lvHabitacionesTraslado.Depth = 0;
             this.lvHabitacionesTraslado.FullRowSelect = true;
             this.lvHabitacionesTraslado.HideSelection = false;
-            listViewItem3.StateImageIndex = 0;
+            listViewItem5.StateImageIndex = 0;
             this.lvHabitacionesTraslado.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem3});
+            listViewItem5});
             this.lvHabitacionesTraslado.Location = new System.Drawing.Point(4, 16);
             this.lvHabitacionesTraslado.MinimumSize = new System.Drawing.Size(200, 100);
             this.lvHabitacionesTraslado.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -283,7 +283,6 @@ namespace ProyectoFinal_Hoteleria
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1142, 757);
             this.panel1.TabIndex = 32;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBox9
             // 
@@ -336,9 +335,9 @@ namespace ProyectoFinal_Hoteleria
             this.lvMobiliario.Depth = 0;
             this.lvMobiliario.FullRowSelect = true;
             this.lvMobiliario.HideSelection = false;
-            listViewItem4.StateImageIndex = 0;
+            listViewItem6.StateImageIndex = 0;
             this.lvMobiliario.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem4});
+            listViewItem6});
             this.lvMobiliario.Location = new System.Drawing.Point(20, 117);
             this.lvMobiliario.MinimumSize = new System.Drawing.Size(200, 100);
             this.lvMobiliario.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -431,9 +430,9 @@ namespace ProyectoFinal_Hoteleria
             this.ClientSize = new System.Drawing.Size(1148, 824);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.Transparent;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormMobiliario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.FormMobiliario_Load);
             this.cardCliente.ResumeLayout(false);
             this.cardCliente.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();

@@ -23,7 +23,10 @@ namespace BusinessLogic
             return _reservacionDA.cargarReservacionesPorId(id);
         }
 
+        public int cargarNumeroReservaciones()
+        {
+            return _reservacionDA.cargarNumeroReservaciones();
+        }
 
-
-    }
+        }
 }

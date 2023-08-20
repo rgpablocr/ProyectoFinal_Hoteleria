@@ -41,18 +41,9 @@ namespace ProyectoFinal_Hoteleria
 
         }
 
-            private void FormMobiliario_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void lvHabitacionesTraslado_SelectedIndexChanged(object sender, EventArgs e)
         {
+            try { 
             if (lvHabitacionesTraslado.SelectedItems.Count > 0)
             {
 
@@ -83,14 +74,21 @@ namespace ProyectoFinal_Hoteleria
                 }
 
                 this.Close();
+            }
+            }
+            catch (Exception ex)
+            {
 
-
+                ModalNotificacion modal = new ModalNotificacion(ex.ToString(), "Error", Primary.Red600, Accent.Red700);
+                modal.TopMost = true;
+                modal.ShowDialog();
             }
         }
 
         private void lvMobiliario_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            try 
+            { 
             if (lvMobiliario.SelectedItems.Count > 0)
             {
                 int id = int.Parse(lvMobiliario.SelectedItems[0].Text);
@@ -115,7 +113,15 @@ namespace ProyectoFinal_Hoteleria
                 }
 
             }
-            
+            }
+            catch (Exception ex)
+            {
+
+                ModalNotificacion modal = new ModalNotificacion(ex.ToString(), "Error", Primary.Red600, Accent.Red700);
+                modal.TopMost = true;
+                modal.ShowDialog();
+            }
+
         }
 
         private void lblCodHabitacion_Click(object sender, EventArgs e)
@@ -123,9 +129,5 @@ namespace ProyectoFinal_Hoteleria
 
         }
 
-        private void btnGuardarHabitacion_Click(object sender, EventArgs e)
-        {
-            
-        }
     }
 }

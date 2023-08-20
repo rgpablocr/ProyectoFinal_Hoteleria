@@ -36,6 +36,10 @@ namespace BusinessLogic
             return _habitacionDA.cargarHotelPorHabitacion(id);
         }
 
+        public int cargarNumeroHabitaciones()
+        {
+            return _habitacionDA.cargarNumeroHabitaciones();
+        }
 
     }
 }
