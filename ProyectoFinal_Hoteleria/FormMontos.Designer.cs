@@ -29,7 +29,7 @@ namespace ProyectoFinal_Hoteleria
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("");
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblTotal = new System.Windows.Forms.Label();
@@ -78,9 +78,9 @@ namespace ProyectoFinal_Hoteleria
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(93, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 21);
+            this.label2.Size = new System.Drawing.Size(198, 21);
             this.label2.TabIndex = 14;
-            this.label2.Text = "Sistema Hotel";
+            this.label2.Text = "Reservación Hotelera";
             // 
             // panel1
             // 
@@ -105,7 +105,7 @@ namespace ProyectoFinal_Hoteleria
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 64);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(933, 750);
+            this.panel1.Size = new System.Drawing.Size(949, 789);
             this.panel1.TabIndex = 16;
             // 
             // lblTotal
@@ -309,9 +309,9 @@ namespace ProyectoFinal_Hoteleria
             this.lvReservaciones.Depth = 0;
             this.lvReservaciones.FullRowSelect = true;
             this.lvReservaciones.HideSelection = false;
-            listViewItem1.StateImageIndex = 0;
+            listViewItem4.StateImageIndex = 0;
             this.lvReservaciones.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem4});
             this.lvReservaciones.Location = new System.Drawing.Point(38, 501);
             this.lvReservaciones.MinimumSize = new System.Drawing.Size(200, 100);
             this.lvReservaciones.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -460,10 +460,11 @@ namespace ProyectoFinal_Hoteleria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(939, 817);
+            this.ClientSize = new System.Drawing.Size(955, 856);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormMontos";
+            this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Montos";
             this.Load += new System.EventHandler(this.FormMontos_Load);

@@ -298,6 +298,7 @@ namespace ProyectoFinal_Hoteleria
                 modal.TopMost = true;
                 modal.ShowDialog();
             }
+            
         }
 
         private void cbxBuscarHabitacion_SelectedIndexChanged(object sender, EventArgs e)
@@ -438,7 +439,7 @@ namespace ProyectoFinal_Hoteleria
         {
             try
             {
- 
+            
             int habitacion = int.Parse(txtCodHabitacion.Text);
 
             MobiliarioBL mobiliarioBL = new MobiliarioBL();
@@ -466,6 +467,23 @@ namespace ProyectoFinal_Hoteleria
                 modal.TopMost = true;
                 modal.ShowDialog();
             }
+
+            lvHabitaciones.Items.Clear();
+            cardDatosHabitacion.Visible = false;
+            txtCodHabitacion.Text = "";
+            txtCodHotel.Text = "";
+            txtPrecioFinal.Text = "";
+            cbxLavado.Checked = false;
+            cbxNevera.Checked = false;
+            cbxSoleado.Checked = false;
+
+        }
+
+        private void tabPage2_Leave(object sender, EventArgs e)
+        {
+
+            cardCliente.Visible = false;
+            lvReservaciones.Visible = false;
         }
     }
 }

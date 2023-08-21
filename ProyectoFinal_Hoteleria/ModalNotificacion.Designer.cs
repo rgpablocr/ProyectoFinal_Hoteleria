@@ -108,6 +108,7 @@ namespace ProyectoFinal_Hoteleria
             this.Controls.Add(this.panel1);
             this.Name = "ModalNotificacion";
             this.ShowInTaskbar = false;
+            this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mensaje";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ModalNotificacion_FormClosing);

@@ -30,17 +30,39 @@ namespace ProyectoFinal_Hoteleria
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem21 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem22 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem23 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem24 = new System.Windows.Forms.ListViewItem("");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
             this.Hotel = new MaterialSkin.Controls.MaterialLabel();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label18 = new System.Windows.Forms.Label();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.materialFloatingActionButton2 = new MaterialSkin.Controls.MaterialFloatingActionButton();
+            this.materialFloatingActionButton3 = new MaterialSkin.Controls.MaterialFloatingActionButton();
+            this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
+            this.materialProgressBar2 = new MaterialSkin.Controls.MaterialProgressBar();
+            this.lblNumeroHabitaciones = new System.Windows.Forms.Label();
+            this.lblHabitaciones = new System.Windows.Forms.Label();
+            this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
+            this.materialProgressBar3 = new MaterialSkin.Controls.MaterialProgressBar();
+            this.lblNumeroReservaciones = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.materialFloatingActionButton1 = new MaterialSkin.Controls.MaterialFloatingActionButton();
+            this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
+            this.materialProgressBar1 = new MaterialSkin.Controls.MaterialProgressBar();
+            this.lblNumeroClientes = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.lvReservaciones = new MaterialSkin.Controls.MaterialListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -49,9 +71,11 @@ namespace ProyectoFinal_Hoteleria
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader22 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnBuscar = new MaterialSkin.Controls.MaterialButton();
             this.label10 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.cardCliente = new MaterialSkin.Controls.MaterialCard();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
@@ -69,6 +93,7 @@ namespace ProyectoFinal_Hoteleria
             this.txtCedula = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.lvMobiliario = new MaterialSkin.Controls.MaterialListView();
             this.codigo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader21 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -86,10 +111,13 @@ namespace ProyectoFinal_Hoteleria
             this.columnHeader20 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label21 = new System.Windows.Forms.Label();
             this.cbxHotelMobiliario = new MaterialSkin.Controls.MaterialComboBox();
+            this.btnBuscarMobiliario = new MaterialSkin.Controls.MaterialButton();
             this.label22 = new System.Windows.Forms.Label();
             this.txtHabitacionMobiliario = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.lvHabitaciones = new MaterialSkin.Controls.MaterialListView();
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -100,13 +128,16 @@ namespace ProyectoFinal_Hoteleria
             this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label13 = new System.Windows.Forms.Label();
             this.cbxBuscarHabitacion = new MaterialSkin.Controls.MaterialComboBox();
+            this.btnBuscarHabitacion = new MaterialSkin.Controls.MaterialButton();
             this.label11 = new System.Windows.Forms.Label();
             this.txtHabitaciones = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.cardDatosHabitacion = new MaterialSkin.Controls.MaterialCard();
+            this.btnEditarMobiliario = new MaterialSkin.Controls.MaterialButton();
             this.cbxLavado = new System.Windows.Forms.CheckBox();
             this.cbxNevera = new System.Windows.Forms.CheckBox();
             this.cbxSoleado = new System.Windows.Forms.CheckBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.txtPrecioFinal = new System.Windows.Forms.TextBox();
@@ -114,69 +145,38 @@ namespace ProyectoFinal_Hoteleria
             this.label17 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.txtCodHabitacion = new System.Windows.Forms.TextBox();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.label26 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
-            this.materialFloatingActionButton1 = new MaterialSkin.Controls.MaterialFloatingActionButton();
-            this.label27 = new System.Windows.Forms.Label();
-            this.lblNumeroClientes = new System.Windows.Forms.Label();
-            this.materialProgressBar1 = new MaterialSkin.Controls.MaterialProgressBar();
-            this.materialCard2 = new MaterialSkin.Controls.MaterialCard();
-            this.materialProgressBar2 = new MaterialSkin.Controls.MaterialProgressBar();
-            this.lblNumeroHabitaciones = new System.Windows.Forms.Label();
-            this.lblHabitaciones = new System.Windows.Forms.Label();
-            this.materialCard3 = new MaterialSkin.Controls.MaterialCard();
-            this.materialProgressBar3 = new MaterialSkin.Controls.MaterialProgressBar();
-            this.lblNumeroReservaciones = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.materialFloatingActionButton2 = new MaterialSkin.Controls.MaterialFloatingActionButton();
-            this.materialFloatingActionButton3 = new MaterialSkin.Controls.MaterialFloatingActionButton();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.btnBuscar = new MaterialSkin.Controls.MaterialButton();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.btnBuscarMobiliario = new MaterialSkin.Controls.MaterialButton();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.btnBuscarHabitacion = new MaterialSkin.Controls.MaterialButton();
-            this.btnEditarMobiliario = new MaterialSkin.Controls.MaterialButton();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.ptbLogo = new System.Windows.Forms.PictureBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.cardCliente.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.cardDatosHabitacion.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.materialCard1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.materialCard2.SuspendLayout();
             this.materialCard3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            this.materialCard1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.cardCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.cardDatosHabitacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).BeginInit();
@@ -212,7 +212,7 @@ namespace ProyectoFinal_Hoteleria
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.Padding = new System.Drawing.Point(10, 5);
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(1144, 763);
+            this.materialTabControl1.Size = new System.Drawing.Size(1160, 790);
             this.materialTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.materialTabControl1.TabIndex = 5;
             // 
@@ -239,20 +239,234 @@ namespace ProyectoFinal_Hoteleria
             this.tabPage1.Location = new System.Drawing.Point(4, 23);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1136, 736);
+            this.tabPage1.Size = new System.Drawing.Size(1152, 763);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Home";
             // 
-            // label18
+            // pictureBox14
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label18.Location = new System.Drawing.Point(71, 31);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(59, 21);
-            this.label18.TabIndex = 14;
-            this.label18.Text = "Inicio";
+            this.pictureBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(100)))), ((int)(((byte)(252)))));
+            this.pictureBox14.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.calendar;
+            this.pictureBox14.Location = new System.Drawing.Point(664, 563);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox14.TabIndex = 26;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(100)))), ((int)(((byte)(252)))));
+            this.pictureBox15.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.bed;
+            this.pictureBox15.Location = new System.Drawing.Point(1007, 562);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox15.TabIndex = 27;
+            this.pictureBox15.TabStop = false;
+            // 
+            // materialFloatingActionButton2
+            // 
+            this.materialFloatingActionButton2.Depth = 0;
+            this.materialFloatingActionButton2.Icon = null;
+            this.materialFloatingActionButton2.Location = new System.Drawing.Point(653, 550);
+            this.materialFloatingActionButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialFloatingActionButton2.Name = "materialFloatingActionButton2";
+            this.materialFloatingActionButton2.Size = new System.Drawing.Size(56, 56);
+            this.materialFloatingActionButton2.TabIndex = 25;
+            this.materialFloatingActionButton2.Text = "materialFloatingActionButton2";
+            this.materialFloatingActionButton2.UseVisualStyleBackColor = true;
+            // 
+            // materialFloatingActionButton3
+            // 
+            this.materialFloatingActionButton3.Depth = 0;
+            this.materialFloatingActionButton3.Icon = null;
+            this.materialFloatingActionButton3.Location = new System.Drawing.Point(994, 550);
+            this.materialFloatingActionButton3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialFloatingActionButton3.Name = "materialFloatingActionButton3";
+            this.materialFloatingActionButton3.Size = new System.Drawing.Size(56, 56);
+            this.materialFloatingActionButton3.TabIndex = 25;
+            this.materialFloatingActionButton3.Text = "materialFloatingActionButton3";
+            this.materialFloatingActionButton3.UseVisualStyleBackColor = true;
+            // 
+            // materialCard2
+            // 
+            this.materialCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard2.Controls.Add(this.materialProgressBar2);
+            this.materialCard2.Controls.Add(this.lblNumeroHabitaciones);
+            this.materialCard2.Controls.Add(this.lblHabitaciones);
+            this.materialCard2.Depth = 0;
+            this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard2.Location = new System.Drawing.Point(748, 497);
+            this.materialCard2.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard2.Name = "materialCard2";
+            this.materialCard2.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard2.Size = new System.Drawing.Size(271, 154);
+            this.materialCard2.TabIndex = 24;
+            // 
+            // materialProgressBar2
+            // 
+            this.materialProgressBar2.Depth = 0;
+            this.materialProgressBar2.Location = new System.Drawing.Point(21, 80);
+            this.materialProgressBar2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialProgressBar2.Name = "materialProgressBar2";
+            this.materialProgressBar2.Size = new System.Drawing.Size(61, 5);
+            this.materialProgressBar2.TabIndex = 23;
+            // 
+            // lblNumeroHabitaciones
+            // 
+            this.lblNumeroHabitaciones.AutoSize = true;
+            this.lblNumeroHabitaciones.BackColor = System.Drawing.Color.Transparent;
+            this.lblNumeroHabitaciones.Font = new System.Drawing.Font("Gadugi", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroHabitaciones.ForeColor = System.Drawing.Color.Black;
+            this.lblNumeroHabitaciones.Location = new System.Drawing.Point(174, 89);
+            this.lblNumeroHabitaciones.Name = "lblNumeroHabitaciones";
+            this.lblNumeroHabitaciones.Size = new System.Drawing.Size(32, 35);
+            this.lblNumeroHabitaciones.TabIndex = 22;
+            this.lblNumeroHabitaciones.Text = "1";
+            // 
+            // lblHabitaciones
+            // 
+            this.lblHabitaciones.AutoSize = true;
+            this.lblHabitaciones.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHabitaciones.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblHabitaciones.Location = new System.Drawing.Point(17, 33);
+            this.lblHabitaciones.Name = "lblHabitaciones";
+            this.lblHabitaciones.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblHabitaciones.Size = new System.Drawing.Size(189, 21);
+            this.lblHabitaciones.TabIndex = 20;
+            this.lblHabitaciones.Text = "Habitaciones activas";
+            // 
+            // materialCard3
+            // 
+            this.materialCard3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard3.Controls.Add(this.materialProgressBar3);
+            this.materialCard3.Controls.Add(this.lblNumeroReservaciones);
+            this.materialCard3.Controls.Add(this.label32);
+            this.materialCard3.Depth = 0;
+            this.materialCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard3.Location = new System.Drawing.Point(403, 497);
+            this.materialCard3.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard3.Name = "materialCard3";
+            this.materialCard3.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard3.Size = new System.Drawing.Size(271, 154);
+            this.materialCard3.TabIndex = 24;
+            // 
+            // materialProgressBar3
+            // 
+            this.materialProgressBar3.Depth = 0;
+            this.materialProgressBar3.Location = new System.Drawing.Point(21, 80);
+            this.materialProgressBar3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialProgressBar3.Name = "materialProgressBar3";
+            this.materialProgressBar3.Size = new System.Drawing.Size(61, 5);
+            this.materialProgressBar3.TabIndex = 23;
+            // 
+            // lblNumeroReservaciones
+            // 
+            this.lblNumeroReservaciones.AutoSize = true;
+            this.lblNumeroReservaciones.BackColor = System.Drawing.Color.Transparent;
+            this.lblNumeroReservaciones.Font = new System.Drawing.Font("Gadugi", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroReservaciones.ForeColor = System.Drawing.Color.Black;
+            this.lblNumeroReservaciones.Location = new System.Drawing.Point(177, 89);
+            this.lblNumeroReservaciones.Name = "lblNumeroReservaciones";
+            this.lblNumeroReservaciones.Size = new System.Drawing.Size(32, 35);
+            this.lblNumeroReservaciones.TabIndex = 22;
+            this.lblNumeroReservaciones.Text = "1";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label32.Location = new System.Drawing.Point(17, 33);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(180, 21);
+            this.label32.TabIndex = 20;
+            this.label32.Text = "Total reservaciones";
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(100)))), ((int)(((byte)(252)))));
+            this.pictureBox13.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.customer;
+            this.pictureBox13.Location = new System.Drawing.Point(319, 562);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox13.TabIndex = 20;
+            this.pictureBox13.TabStop = false;
+            // 
+            // materialFloatingActionButton1
+            // 
+            this.materialFloatingActionButton1.Depth = 0;
+            this.materialFloatingActionButton1.Icon = null;
+            this.materialFloatingActionButton1.Location = new System.Drawing.Point(307, 550);
+            this.materialFloatingActionButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialFloatingActionButton1.Name = "materialFloatingActionButton1";
+            this.materialFloatingActionButton1.Size = new System.Drawing.Size(56, 56);
+            this.materialFloatingActionButton1.TabIndex = 19;
+            this.materialFloatingActionButton1.Text = "materialFloatingActionButton1";
+            this.materialFloatingActionButton1.UseVisualStyleBackColor = true;
+            // 
+            // materialCard1
+            // 
+            this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard1.Controls.Add(this.materialProgressBar1);
+            this.materialCard1.Controls.Add(this.lblNumeroClientes);
+            this.materialCard1.Controls.Add(this.label27);
+            this.materialCard1.Depth = 0;
+            this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialCard1.Location = new System.Drawing.Point(64, 497);
+            this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
+            this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialCard1.Name = "materialCard1";
+            this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
+            this.materialCard1.Size = new System.Drawing.Size(271, 154);
+            this.materialCard1.TabIndex = 18;
+            // 
+            // materialProgressBar1
+            // 
+            this.materialProgressBar1.BackColor = System.Drawing.Color.White;
+            this.materialProgressBar1.Depth = 0;
+            this.materialProgressBar1.Location = new System.Drawing.Point(21, 80);
+            this.materialProgressBar1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialProgressBar1.Name = "materialProgressBar1";
+            this.materialProgressBar1.Size = new System.Drawing.Size(61, 5);
+            this.materialProgressBar1.TabIndex = 23;
+            // 
+            // lblNumeroClientes
+            // 
+            this.lblNumeroClientes.AutoSize = true;
+            this.lblNumeroClientes.BackColor = System.Drawing.Color.Transparent;
+            this.lblNumeroClientes.Font = new System.Drawing.Font("Gadugi", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroClientes.ForeColor = System.Drawing.Color.Black;
+            this.lblNumeroClientes.Location = new System.Drawing.Point(173, 89);
+            this.lblNumeroClientes.Name = "lblNumeroClientes";
+            this.lblNumeroClientes.Size = new System.Drawing.Size(32, 35);
+            this.lblNumeroClientes.TabIndex = 22;
+            this.lblNumeroClientes.Text = "1";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label27.Location = new System.Drawing.Point(17, 33);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(155, 21);
+            this.label27.TabIndex = 20;
+            this.label27.Text = "Clientes actuales";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.home;
+            this.pictureBox7.Location = new System.Drawing.Point(36, 22);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(29, 30);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 15;
+            this.pictureBox7.TabStop = false;
             // 
             // label1
             // 
@@ -265,6 +479,38 @@ namespace ProyectoFinal_Hoteleria
             this.label1.Size = new System.Drawing.Size(361, 38);
             this.label1.TabIndex = 4;
             this.label1.Text = "¡Bienvenido al sistema!";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label18.Location = new System.Drawing.Point(71, 31);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(59, 21);
+            this.label18.TabIndex = 14;
+            this.label18.Text = "Inicio";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(68)))), ((int)(((byte)(164)))));
+            this.pictureBox2.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.hotel__2_1;
+            this.pictureBox2.Location = new System.Drawing.Point(748, 211);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(159, 174);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 17;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.rect;
+            this.pictureBox12.Location = new System.Drawing.Point(36, 123);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(1037, 283);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 16;
+            this.pictureBox12.TabStop = false;
             // 
             // tabPage2
             // 
@@ -281,9 +527,20 @@ namespace ProyectoFinal_Hoteleria
             this.tabPage2.Location = new System.Drawing.Point(4, 23);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(9, 8, 9, 8);
-            this.tabPage2.Size = new System.Drawing.Size(1193, 736);
+            this.tabPage2.Size = new System.Drawing.Size(1152, 763);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Reservación";
+            this.tabPage2.Leave += new System.EventHandler(this.tabPage2_Leave);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.hotel__1_;
+            this.pictureBox6.Location = new System.Drawing.Point(28, 19);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(40, 42);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 13;
+            this.pictureBox6.TabStop = false;
             // 
             // lvReservaciones
             // 
@@ -301,9 +558,9 @@ namespace ProyectoFinal_Hoteleria
             this.lvReservaciones.Depth = 0;
             this.lvReservaciones.FullRowSelect = true;
             this.lvReservaciones.HideSelection = false;
-            listViewItem5.StateImageIndex = 0;
+            listViewItem21.StateImageIndex = 0;
             this.lvReservaciones.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem5});
+            listViewItem21});
             this.lvReservaciones.Location = new System.Drawing.Point(28, 456);
             this.lvReservaciones.MinimumSize = new System.Drawing.Size(200, 100);
             this.lvReservaciones.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -352,6 +609,28 @@ namespace ProyectoFinal_Hoteleria
             this.columnHeader22.Text = "Cancelado";
             this.columnHeader22.Width = 150;
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.AutoSize = false;
+            this.btnBuscar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnBuscar.CharacterCasing = MaterialSkin.Controls.MaterialButton.CharacterCasingEnum.Normal;
+            this.btnBuscar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnBuscar.Depth = 0;
+            this.btnBuscar.HighEmphasis = true;
+            this.btnBuscar.Icon = global::ProyectoFinal_Hoteleria.Properties.Resources.lupa2;
+            this.btnBuscar.Location = new System.Drawing.Point(872, 19);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnBuscar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnBuscar.Size = new System.Drawing.Size(188, 36);
+            this.btnBuscar.TabIndex = 9;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnBuscar.UseAccentColor = false;
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -399,6 +678,16 @@ namespace ProyectoFinal_Hoteleria
             this.cardCliente.Size = new System.Drawing.Size(1032, 333);
             this.cardCliente.TabIndex = 4;
             this.cardCliente.Visible = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.circle;
+            this.pictureBox4.Location = new System.Drawing.Point(951, 17);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox4.TabIndex = 24;
+            this.pictureBox4.TabStop = false;
             // 
             // label16
             // 
@@ -580,9 +869,19 @@ namespace ProyectoFinal_Hoteleria
             this.tabPage4.Location = new System.Drawing.Point(4, 23);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1136, 736);
+            this.tabPage4.Size = new System.Drawing.Size(1136, 724);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Mobiliarios";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.chair;
+            this.pictureBox9.Location = new System.Drawing.Point(1000, 387);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox9.TabIndex = 38;
+            this.pictureBox9.TabStop = false;
             // 
             // lvMobiliario
             // 
@@ -598,9 +897,9 @@ namespace ProyectoFinal_Hoteleria
             this.lvMobiliario.Depth = 0;
             this.lvMobiliario.FullRowSelect = true;
             this.lvMobiliario.HideSelection = false;
-            listViewItem6.StateImageIndex = 0;
+            listViewItem22.StateImageIndex = 0;
             this.lvMobiliario.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem6});
+            listViewItem22});
             this.lvMobiliario.Location = new System.Drawing.Point(28, 472);
             this.lvMobiliario.MinimumSize = new System.Drawing.Size(200, 100);
             this.lvMobiliario.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -665,9 +964,9 @@ namespace ProyectoFinal_Hoteleria
             this.lvlHabitacionesMobiliario.Depth = 0;
             this.lvlHabitacionesMobiliario.FullRowSelect = true;
             this.lvlHabitacionesMobiliario.HideSelection = false;
-            listViewItem7.StateImageIndex = 0;
+            listViewItem23.StateImageIndex = 0;
             this.lvlHabitacionesMobiliario.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem7});
+            listViewItem23});
             this.lvlHabitacionesMobiliario.Location = new System.Drawing.Point(28, 112);
             this.lvlHabitacionesMobiliario.MinimumSize = new System.Drawing.Size(200, 100);
             this.lvlHabitacionesMobiliario.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -751,6 +1050,28 @@ namespace ProyectoFinal_Hoteleria
             this.cbxHotelMobiliario.TabIndex = 33;
             this.cbxHotelMobiliario.SelectedIndexChanged += new System.EventHandler(this.cbxHotelMobiliario_SelectedIndexChanged);
             // 
+            // btnBuscarMobiliario
+            // 
+            this.btnBuscarMobiliario.AutoSize = false;
+            this.btnBuscarMobiliario.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnBuscarMobiliario.CharacterCasing = MaterialSkin.Controls.MaterialButton.CharacterCasingEnum.Normal;
+            this.btnBuscarMobiliario.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnBuscarMobiliario.Depth = 0;
+            this.btnBuscarMobiliario.HighEmphasis = true;
+            this.btnBuscarMobiliario.Icon = global::ProyectoFinal_Hoteleria.Properties.Resources.lupa2;
+            this.btnBuscarMobiliario.Location = new System.Drawing.Point(601, 24);
+            this.btnBuscarMobiliario.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnBuscarMobiliario.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnBuscarMobiliario.Name = "btnBuscarMobiliario";
+            this.btnBuscarMobiliario.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnBuscarMobiliario.Size = new System.Drawing.Size(188, 36);
+            this.btnBuscarMobiliario.TabIndex = 32;
+            this.btnBuscarMobiliario.Text = "Buscar";
+            this.btnBuscarMobiliario.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnBuscarMobiliario.UseAccentColor = false;
+            this.btnBuscarMobiliario.UseVisualStyleBackColor = true;
+            this.btnBuscarMobiliario.Click += new System.EventHandler(this.btnBucarMobiliario_Click);
+            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -780,6 +1101,16 @@ namespace ProyectoFinal_Hoteleria
             this.label19.TabIndex = 25;
             this.label19.Text = "Mobiliario";
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.sofa;
+            this.pictureBox8.Location = new System.Drawing.Point(28, 24);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(38, 36);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 29;
+            this.pictureBox8.TabStop = false;
+            // 
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.Snow;
@@ -795,9 +1126,19 @@ namespace ProyectoFinal_Hoteleria
             this.tabPage5.ImageKey = "single-bed.png";
             this.tabPage5.Location = new System.Drawing.Point(4, 23);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1193, 736);
+            this.tabPage5.Size = new System.Drawing.Size(1152, 763);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Habitaciones";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.single_bed;
+            this.pictureBox5.Location = new System.Drawing.Point(32, 26);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(38, 36);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 24;
+            this.pictureBox5.TabStop = false;
             // 
             // lvHabitaciones
             // 
@@ -815,9 +1156,9 @@ namespace ProyectoFinal_Hoteleria
             this.lvHabitaciones.Depth = 0;
             this.lvHabitaciones.FullRowSelect = true;
             this.lvHabitaciones.HideSelection = false;
-            listViewItem8.StateImageIndex = 0;
+            listViewItem24.StateImageIndex = 0;
             this.lvHabitaciones.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem8});
+            listViewItem24});
             this.lvHabitaciones.Location = new System.Drawing.Point(32, 96);
             this.lvHabitaciones.MinimumSize = new System.Drawing.Size(200, 100);
             this.lvHabitaciones.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -901,6 +1242,28 @@ namespace ProyectoFinal_Hoteleria
             this.cbxBuscarHabitacion.TabIndex = 20;
             this.cbxBuscarHabitacion.SelectedIndexChanged += new System.EventHandler(this.cbxBuscarHabitacion_SelectedIndexChanged);
             // 
+            // btnBuscarHabitacion
+            // 
+            this.btnBuscarHabitacion.AutoSize = false;
+            this.btnBuscarHabitacion.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnBuscarHabitacion.CharacterCasing = MaterialSkin.Controls.MaterialButton.CharacterCasingEnum.Normal;
+            this.btnBuscarHabitacion.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnBuscarHabitacion.Depth = 0;
+            this.btnBuscarHabitacion.HighEmphasis = true;
+            this.btnBuscarHabitacion.Icon = global::ProyectoFinal_Hoteleria.Properties.Resources.lupa2;
+            this.btnBuscarHabitacion.Location = new System.Drawing.Point(587, 18);
+            this.btnBuscarHabitacion.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnBuscarHabitacion.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnBuscarHabitacion.Name = "btnBuscarHabitacion";
+            this.btnBuscarHabitacion.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnBuscarHabitacion.Size = new System.Drawing.Size(188, 36);
+            this.btnBuscarHabitacion.TabIndex = 18;
+            this.btnBuscarHabitacion.Text = "Buscar";
+            this.btnBuscarHabitacion.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnBuscarHabitacion.UseAccentColor = false;
+            this.btnBuscarHabitacion.UseVisualStyleBackColor = true;
+            this.btnBuscarHabitacion.Click += new System.EventHandler(this.btnBuscarHabitacion_Click);
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -956,6 +1319,28 @@ namespace ProyectoFinal_Hoteleria
             this.cardDatosHabitacion.TabIndex = 23;
             this.cardDatosHabitacion.Visible = false;
             // 
+            // btnEditarMobiliario
+            // 
+            this.btnEditarMobiliario.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnEditarMobiliario.CharacterCasing = MaterialSkin.Controls.MaterialButton.CharacterCasingEnum.Normal;
+            this.btnEditarMobiliario.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnEditarMobiliario.Depth = 0;
+            this.btnEditarMobiliario.HighEmphasis = false;
+            this.btnEditarMobiliario.Icon = global::ProyectoFinal_Hoteleria.Properties.Resources.edit;
+            this.btnEditarMobiliario.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnEditarMobiliario.Location = new System.Drawing.Point(818, 213);
+            this.btnEditarMobiliario.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnEditarMobiliario.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnEditarMobiliario.Name = "btnEditarMobiliario";
+            this.btnEditarMobiliario.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnEditarMobiliario.Size = new System.Drawing.Size(185, 36);
+            this.btnEditarMobiliario.TabIndex = 27;
+            this.btnEditarMobiliario.Text = "Editar mobiliario";
+            this.btnEditarMobiliario.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
+            this.btnEditarMobiliario.UseAccentColor = false;
+            this.btnEditarMobiliario.UseVisualStyleBackColor = true;
+            this.btnEditarMobiliario.Click += new System.EventHandler(this.btnEditarMobiliario_Click);
+            // 
             // cbxLavado
             // 
             this.cbxLavado.AutoSize = true;
@@ -991,6 +1376,16 @@ namespace ProyectoFinal_Hoteleria
             this.cbxSoleado.TabIndex = 24;
             this.cbxSoleado.Text = "Es Soleado";
             this.cbxSoleado.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.bedroom1;
+            this.pictureBox3.Location = new System.Drawing.Point(939, 17);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 23;
+            this.pictureBox3.TabStop = false;
             // 
             // label15
             // 
@@ -1057,17 +1452,6 @@ namespace ProyectoFinal_Hoteleria
             this.txtCodHabitacion.Size = new System.Drawing.Size(150, 21);
             this.txtCodHabitacion.TabIndex = 1;
             // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "file.png");
-            this.imageList1.Images.SetKeyName(1, "sofa.png");
-            this.imageList1.Images.SetKeyName(2, "single-bed.png");
-            this.imageList1.Images.SetKeyName(3, "hotel (1).png");
-            this.imageList1.Images.SetKeyName(4, "home_menu.png");
-            this.imageList1.Images.SetKeyName(5, "information-button_menu.png");
-            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.Snow;
@@ -1080,9 +1464,30 @@ namespace ProyectoFinal_Hoteleria
             this.tabPage3.ImageKey = "information-button_menu.png";
             this.tabPage3.Location = new System.Drawing.Point(4, 23);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1193, 806);
+            this.tabPage3.Size = new System.Drawing.Size(1136, 724);
             this.tabPage3.TabIndex = 5;
             this.tabPage3.Text = "Acerca De";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.circle1;
+            this.pictureBox10.Location = new System.Drawing.Point(479, 523);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(38, 38);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 44;
+            this.pictureBox10.TabStop = false;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label26.Location = new System.Drawing.Point(507, 386);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(100, 21);
+            this.label26.TabIndex = 43;
+            this.label26.Text = "Creadores";
             // 
             // label23
             // 
@@ -1106,421 +1511,6 @@ namespace ProyectoFinal_Hoteleria
             this.label24.TabIndex = 40;
             this.label24.Text = "Pablo Rodríguez";
             // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label26.Location = new System.Drawing.Point(507, 386);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(100, 21);
-            this.label26.TabIndex = 43;
-            this.label26.Text = "Creadores";
-            // 
-            // materialCard1
-            // 
-            this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard1.Controls.Add(this.materialProgressBar1);
-            this.materialCard1.Controls.Add(this.lblNumeroClientes);
-            this.materialCard1.Controls.Add(this.label27);
-            this.materialCard1.Depth = 0;
-            this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(64, 497);
-            this.materialCard1.Margin = new System.Windows.Forms.Padding(14);
-            this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCard1.Name = "materialCard1";
-            this.materialCard1.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard1.Size = new System.Drawing.Size(271, 154);
-            this.materialCard1.TabIndex = 18;
-            // 
-            // materialFloatingActionButton1
-            // 
-            this.materialFloatingActionButton1.Depth = 0;
-            this.materialFloatingActionButton1.Icon = null;
-            this.materialFloatingActionButton1.Location = new System.Drawing.Point(307, 550);
-            this.materialFloatingActionButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFloatingActionButton1.Name = "materialFloatingActionButton1";
-            this.materialFloatingActionButton1.Size = new System.Drawing.Size(56, 56);
-            this.materialFloatingActionButton1.TabIndex = 19;
-            this.materialFloatingActionButton1.Text = "materialFloatingActionButton1";
-            this.materialFloatingActionButton1.UseVisualStyleBackColor = true;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label27.Location = new System.Drawing.Point(17, 33);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(155, 21);
-            this.label27.TabIndex = 20;
-            this.label27.Text = "Clientes actuales";
-            // 
-            // lblNumeroClientes
-            // 
-            this.lblNumeroClientes.AutoSize = true;
-            this.lblNumeroClientes.BackColor = System.Drawing.Color.Transparent;
-            this.lblNumeroClientes.Font = new System.Drawing.Font("Gadugi", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumeroClientes.ForeColor = System.Drawing.Color.Black;
-            this.lblNumeroClientes.Location = new System.Drawing.Point(173, 89);
-            this.lblNumeroClientes.Name = "lblNumeroClientes";
-            this.lblNumeroClientes.Size = new System.Drawing.Size(32, 35);
-            this.lblNumeroClientes.TabIndex = 22;
-            this.lblNumeroClientes.Text = "1";
-            // 
-            // materialProgressBar1
-            // 
-            this.materialProgressBar1.BackColor = System.Drawing.Color.White;
-            this.materialProgressBar1.Depth = 0;
-            this.materialProgressBar1.Location = new System.Drawing.Point(21, 80);
-            this.materialProgressBar1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialProgressBar1.Name = "materialProgressBar1";
-            this.materialProgressBar1.Size = new System.Drawing.Size(61, 5);
-            this.materialProgressBar1.TabIndex = 23;
-            // 
-            // materialCard2
-            // 
-            this.materialCard2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard2.Controls.Add(this.materialProgressBar2);
-            this.materialCard2.Controls.Add(this.lblNumeroHabitaciones);
-            this.materialCard2.Controls.Add(this.lblHabitaciones);
-            this.materialCard2.Depth = 0;
-            this.materialCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard2.Location = new System.Drawing.Point(748, 497);
-            this.materialCard2.Margin = new System.Windows.Forms.Padding(14);
-            this.materialCard2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCard2.Name = "materialCard2";
-            this.materialCard2.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard2.Size = new System.Drawing.Size(271, 154);
-            this.materialCard2.TabIndex = 24;
-            // 
-            // materialProgressBar2
-            // 
-            this.materialProgressBar2.Depth = 0;
-            this.materialProgressBar2.Location = new System.Drawing.Point(21, 80);
-            this.materialProgressBar2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialProgressBar2.Name = "materialProgressBar2";
-            this.materialProgressBar2.Size = new System.Drawing.Size(61, 5);
-            this.materialProgressBar2.TabIndex = 23;
-            // 
-            // lblNumeroHabitaciones
-            // 
-            this.lblNumeroHabitaciones.AutoSize = true;
-            this.lblNumeroHabitaciones.BackColor = System.Drawing.Color.Transparent;
-            this.lblNumeroHabitaciones.Font = new System.Drawing.Font("Gadugi", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumeroHabitaciones.ForeColor = System.Drawing.Color.Black;
-            this.lblNumeroHabitaciones.Location = new System.Drawing.Point(174, 89);
-            this.lblNumeroHabitaciones.Name = "lblNumeroHabitaciones";
-            this.lblNumeroHabitaciones.Size = new System.Drawing.Size(32, 35);
-            this.lblNumeroHabitaciones.TabIndex = 22;
-            this.lblNumeroHabitaciones.Text = "1";
-            // 
-            // lblHabitaciones
-            // 
-            this.lblHabitaciones.AutoSize = true;
-            this.lblHabitaciones.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHabitaciones.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblHabitaciones.Location = new System.Drawing.Point(17, 33);
-            this.lblHabitaciones.Name = "lblHabitaciones";
-            this.lblHabitaciones.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblHabitaciones.Size = new System.Drawing.Size(189, 21);
-            this.lblHabitaciones.TabIndex = 20;
-            this.lblHabitaciones.Text = "Habitaciones activas";
-            // 
-            // materialCard3
-            // 
-            this.materialCard3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialCard3.Controls.Add(this.materialProgressBar3);
-            this.materialCard3.Controls.Add(this.lblNumeroReservaciones);
-            this.materialCard3.Controls.Add(this.label32);
-            this.materialCard3.Depth = 0;
-            this.materialCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard3.Location = new System.Drawing.Point(403, 497);
-            this.materialCard3.Margin = new System.Windows.Forms.Padding(14);
-            this.materialCard3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialCard3.Name = "materialCard3";
-            this.materialCard3.Padding = new System.Windows.Forms.Padding(14);
-            this.materialCard3.Size = new System.Drawing.Size(271, 154);
-            this.materialCard3.TabIndex = 24;
-            // 
-            // materialProgressBar3
-            // 
-            this.materialProgressBar3.Depth = 0;
-            this.materialProgressBar3.Location = new System.Drawing.Point(21, 80);
-            this.materialProgressBar3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialProgressBar3.Name = "materialProgressBar3";
-            this.materialProgressBar3.Size = new System.Drawing.Size(61, 5);
-            this.materialProgressBar3.TabIndex = 23;
-            // 
-            // lblNumeroReservaciones
-            // 
-            this.lblNumeroReservaciones.AutoSize = true;
-            this.lblNumeroReservaciones.BackColor = System.Drawing.Color.Transparent;
-            this.lblNumeroReservaciones.Font = new System.Drawing.Font("Gadugi", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumeroReservaciones.ForeColor = System.Drawing.Color.Black;
-            this.lblNumeroReservaciones.Location = new System.Drawing.Point(177, 89);
-            this.lblNumeroReservaciones.Name = "lblNumeroReservaciones";
-            this.lblNumeroReservaciones.Size = new System.Drawing.Size(32, 35);
-            this.lblNumeroReservaciones.TabIndex = 22;
-            this.lblNumeroReservaciones.Text = "1";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label32.Location = new System.Drawing.Point(17, 33);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(180, 21);
-            this.label32.TabIndex = 20;
-            this.label32.Text = "Total reservaciones";
-            // 
-            // materialFloatingActionButton2
-            // 
-            this.materialFloatingActionButton2.Depth = 0;
-            this.materialFloatingActionButton2.Icon = null;
-            this.materialFloatingActionButton2.Location = new System.Drawing.Point(653, 550);
-            this.materialFloatingActionButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFloatingActionButton2.Name = "materialFloatingActionButton2";
-            this.materialFloatingActionButton2.Size = new System.Drawing.Size(56, 56);
-            this.materialFloatingActionButton2.TabIndex = 25;
-            this.materialFloatingActionButton2.Text = "materialFloatingActionButton2";
-            this.materialFloatingActionButton2.UseVisualStyleBackColor = true;
-            // 
-            // materialFloatingActionButton3
-            // 
-            this.materialFloatingActionButton3.Depth = 0;
-            this.materialFloatingActionButton3.Icon = null;
-            this.materialFloatingActionButton3.Location = new System.Drawing.Point(994, 550);
-            this.materialFloatingActionButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFloatingActionButton3.Name = "materialFloatingActionButton3";
-            this.materialFloatingActionButton3.Size = new System.Drawing.Size(56, 56);
-            this.materialFloatingActionButton3.TabIndex = 25;
-            this.materialFloatingActionButton3.Text = "materialFloatingActionButton3";
-            this.materialFloatingActionButton3.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(100)))), ((int)(((byte)(252)))));
-            this.pictureBox15.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.bed;
-            this.pictureBox15.Location = new System.Drawing.Point(1007, 562);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox15.TabIndex = 27;
-            this.pictureBox15.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(100)))), ((int)(((byte)(252)))));
-            this.pictureBox14.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.calendar;
-            this.pictureBox14.Location = new System.Drawing.Point(664, 563);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox14.TabIndex = 26;
-            this.pictureBox14.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(100)))), ((int)(((byte)(252)))));
-            this.pictureBox13.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.customer;
-            this.pictureBox13.Location = new System.Drawing.Point(319, 562);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox13.TabIndex = 20;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.home;
-            this.pictureBox7.Location = new System.Drawing.Point(36, 22);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(29, 30);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 15;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(68)))), ((int)(((byte)(164)))));
-            this.pictureBox2.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.hotel__2_1;
-            this.pictureBox2.Location = new System.Drawing.Point(735, 178);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(187, 207);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 17;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.rect;
-            this.pictureBox12.Location = new System.Drawing.Point(36, 123);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(1037, 283);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 16;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.hotel__1_;
-            this.pictureBox6.Location = new System.Drawing.Point(28, 19);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(40, 42);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 13;
-            this.pictureBox6.TabStop = false;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.AutoSize = false;
-            this.btnBuscar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnBuscar.CharacterCasing = MaterialSkin.Controls.MaterialButton.CharacterCasingEnum.Normal;
-            this.btnBuscar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnBuscar.Depth = 0;
-            this.btnBuscar.HighEmphasis = true;
-            this.btnBuscar.Icon = global::ProyectoFinal_Hoteleria.Properties.Resources.lupa2;
-            this.btnBuscar.Location = new System.Drawing.Point(872, 19);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnBuscar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnBuscar.Size = new System.Drawing.Size(188, 36);
-            this.btnBuscar.TabIndex = 9;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnBuscar.UseAccentColor = false;
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.circle;
-            this.pictureBox4.Location = new System.Drawing.Point(951, 17);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox4.TabIndex = 24;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.chair;
-            this.pictureBox9.Location = new System.Drawing.Point(1000, 387);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox9.TabIndex = 38;
-            this.pictureBox9.TabStop = false;
-            // 
-            // btnBuscarMobiliario
-            // 
-            this.btnBuscarMobiliario.AutoSize = false;
-            this.btnBuscarMobiliario.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnBuscarMobiliario.CharacterCasing = MaterialSkin.Controls.MaterialButton.CharacterCasingEnum.Normal;
-            this.btnBuscarMobiliario.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnBuscarMobiliario.Depth = 0;
-            this.btnBuscarMobiliario.HighEmphasis = true;
-            this.btnBuscarMobiliario.Icon = global::ProyectoFinal_Hoteleria.Properties.Resources.lupa2;
-            this.btnBuscarMobiliario.Location = new System.Drawing.Point(601, 24);
-            this.btnBuscarMobiliario.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnBuscarMobiliario.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnBuscarMobiliario.Name = "btnBuscarMobiliario";
-            this.btnBuscarMobiliario.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnBuscarMobiliario.Size = new System.Drawing.Size(188, 36);
-            this.btnBuscarMobiliario.TabIndex = 32;
-            this.btnBuscarMobiliario.Text = "Buscar";
-            this.btnBuscarMobiliario.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnBuscarMobiliario.UseAccentColor = false;
-            this.btnBuscarMobiliario.UseVisualStyleBackColor = true;
-            this.btnBuscarMobiliario.Click += new System.EventHandler(this.btnBucarMobiliario_Click);
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.sofa;
-            this.pictureBox8.Location = new System.Drawing.Point(28, 24);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(38, 36);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 29;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.single_bed;
-            this.pictureBox5.Location = new System.Drawing.Point(32, 26);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(38, 36);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 24;
-            this.pictureBox5.TabStop = false;
-            // 
-            // btnBuscarHabitacion
-            // 
-            this.btnBuscarHabitacion.AutoSize = false;
-            this.btnBuscarHabitacion.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnBuscarHabitacion.CharacterCasing = MaterialSkin.Controls.MaterialButton.CharacterCasingEnum.Normal;
-            this.btnBuscarHabitacion.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnBuscarHabitacion.Depth = 0;
-            this.btnBuscarHabitacion.HighEmphasis = true;
-            this.btnBuscarHabitacion.Icon = global::ProyectoFinal_Hoteleria.Properties.Resources.lupa2;
-            this.btnBuscarHabitacion.Location = new System.Drawing.Point(587, 18);
-            this.btnBuscarHabitacion.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnBuscarHabitacion.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnBuscarHabitacion.Name = "btnBuscarHabitacion";
-            this.btnBuscarHabitacion.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnBuscarHabitacion.Size = new System.Drawing.Size(188, 36);
-            this.btnBuscarHabitacion.TabIndex = 18;
-            this.btnBuscarHabitacion.Text = "Buscar";
-            this.btnBuscarHabitacion.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnBuscarHabitacion.UseAccentColor = false;
-            this.btnBuscarHabitacion.UseVisualStyleBackColor = true;
-            this.btnBuscarHabitacion.Click += new System.EventHandler(this.btnBuscarHabitacion_Click);
-            // 
-            // btnEditarMobiliario
-            // 
-            this.btnEditarMobiliario.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnEditarMobiliario.CharacterCasing = MaterialSkin.Controls.MaterialButton.CharacterCasingEnum.Normal;
-            this.btnEditarMobiliario.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnEditarMobiliario.Depth = 0;
-            this.btnEditarMobiliario.HighEmphasis = false;
-            this.btnEditarMobiliario.Icon = global::ProyectoFinal_Hoteleria.Properties.Resources.edit;
-            this.btnEditarMobiliario.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.btnEditarMobiliario.Location = new System.Drawing.Point(818, 213);
-            this.btnEditarMobiliario.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnEditarMobiliario.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnEditarMobiliario.Name = "btnEditarMobiliario";
-            this.btnEditarMobiliario.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnEditarMobiliario.Size = new System.Drawing.Size(185, 36);
-            this.btnEditarMobiliario.TabIndex = 27;
-            this.btnEditarMobiliario.Text = "Editar mobiliario";
-            this.btnEditarMobiliario.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
-            this.btnEditarMobiliario.UseAccentColor = false;
-            this.btnEditarMobiliario.UseVisualStyleBackColor = true;
-            this.btnEditarMobiliario.Click += new System.EventHandler(this.btnEditarMobiliario_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.bedroom1;
-            this.pictureBox3.Location = new System.Drawing.Point(939, 17);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 23;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.circle1;
-            this.pictureBox10.Location = new System.Drawing.Point(479, 523);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(38, 38);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 44;
-            this.pictureBox10.TabStop = false;
-            // 
             // pictureBox11
             // 
             this.pictureBox11.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.circle1;
@@ -1541,6 +1531,17 @@ namespace ProyectoFinal_Hoteleria
             this.ptbLogo.TabIndex = 38;
             this.ptbLogo.TabStop = false;
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "file.png");
+            this.imageList1.Images.SetKeyName(1, "sofa.png");
+            this.imageList1.Images.SetKeyName(2, "single-bed.png");
+            this.imageList1.Images.SetKeyName(3, "hotel (1).png");
+            this.imageList1.Images.SetKeyName(4, "home_menu.png");
+            this.imageList1.Images.SetKeyName(5, "information-button_menu.png");
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.building;
@@ -1556,7 +1557,7 @@ namespace ProyectoFinal_Hoteleria
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
-            this.ClientSize = new System.Drawing.Size(1150, 830);
+            this.ClientSize = new System.Drawing.Size(1166, 854);
             this.Controls.Add(this.materialTabControl1);
             this.Controls.Add(this.Hotel);
             this.Controls.Add(this.pictureBox1);
@@ -1566,43 +1567,43 @@ namespace ProyectoFinal_Hoteleria
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form";
-            this.Sizable = false;
+            this.Padding = new System.Windows.Forms.Padding(3, 64, 3, 0);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sistema Hotel ";
+            this.Text = "Reservación Hotelera";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.cardCliente.ResumeLayout(false);
-            this.cardCliente.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
-            this.cardDatosHabitacion.ResumeLayout(false);
-            this.cardDatosHabitacion.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.materialCard1.ResumeLayout(false);
-            this.materialCard1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.materialCard2.ResumeLayout(false);
             this.materialCard2.PerformLayout();
             this.materialCard3.ResumeLayout(false);
             this.materialCard3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            this.materialCard1.ResumeLayout(false);
+            this.materialCard1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.cardCliente.ResumeLayout(false);
+            this.cardCliente.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.cardDatosHabitacion.ResumeLayout(false);
+            this.cardDatosHabitacion.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbLogo)).EndInit();
