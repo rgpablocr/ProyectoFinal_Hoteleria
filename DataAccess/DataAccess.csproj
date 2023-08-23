@@ -49,6 +49,7 @@
     <Compile Include="MobiliarioDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReservacionDA.cs" />
+    <Compile Include="UsuarioDA.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

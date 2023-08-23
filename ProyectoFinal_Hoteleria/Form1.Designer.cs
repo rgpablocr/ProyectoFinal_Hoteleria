@@ -30,10 +30,11 @@ namespace ProyectoFinal_Hoteleria
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem21 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem22 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem23 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem24 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem("");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
             this.Hotel = new MaterialSkin.Controls.MaterialLabel();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
@@ -145,6 +146,33 @@ namespace ProyectoFinal_Hoteleria
             this.label17 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.txtCodHabitacion = new System.Windows.Forms.TextBox();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.cardHotel = new MaterialSkin.Controls.MaterialCard();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.txtDireccionHotel = new System.Windows.Forms.TextBox();
+            this.txtTelefonoHotel = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.txtNombreHotel = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.txtCodigoHotel = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.cbxHoteles = new MaterialSkin.Controls.MaterialComboBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.cardHabitacionHotel = new MaterialSkin.Controls.MaterialCard();
+            this.lvHabitacionHotel = new MaterialSkin.Controls.MaterialListView();
+            this.columnHeader26 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader27 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader28 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader29 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader30 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader31 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader32 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label31 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label26 = new System.Windows.Forms.Label();
@@ -176,6 +204,12 @@ namespace ProyectoFinal_Hoteleria
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.cardDatosHabitacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.tabPage6.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.cardHotel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            this.cardHabitacionHotel.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -201,6 +235,7 @@ namespace ProyectoFinal_Hoteleria
             this.materialTabControl1.Controls.Add(this.tabPage2);
             this.materialTabControl1.Controls.Add(this.tabPage4);
             this.materialTabControl1.Controls.Add(this.tabPage5);
+            this.materialTabControl1.Controls.Add(this.tabPage6);
             this.materialTabControl1.Controls.Add(this.tabPage3);
             this.materialTabControl1.Depth = 0;
             this.materialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -212,7 +247,7 @@ namespace ProyectoFinal_Hoteleria
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.Padding = new System.Drawing.Point(10, 5);
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(1160, 790);
+            this.materialTabControl1.Size = new System.Drawing.Size(1134, 796);
             this.materialTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.materialTabControl1.TabIndex = 5;
             // 
@@ -239,7 +274,7 @@ namespace ProyectoFinal_Hoteleria
             this.tabPage1.Location = new System.Drawing.Point(4, 23);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1152, 763);
+            this.tabPage1.Size = new System.Drawing.Size(1126, 769);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Home";
             // 
@@ -527,7 +562,7 @@ namespace ProyectoFinal_Hoteleria
             this.tabPage2.Location = new System.Drawing.Point(4, 23);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(9, 8, 9, 8);
-            this.tabPage2.Size = new System.Drawing.Size(1152, 763);
+            this.tabPage2.Size = new System.Drawing.Size(1126, 769);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Reservación";
             this.tabPage2.Leave += new System.EventHandler(this.tabPage2_Leave);
@@ -558,9 +593,9 @@ namespace ProyectoFinal_Hoteleria
             this.lvReservaciones.Depth = 0;
             this.lvReservaciones.FullRowSelect = true;
             this.lvReservaciones.HideSelection = false;
-            listViewItem21.StateImageIndex = 0;
+            listViewItem12.StateImageIndex = 0;
             this.lvReservaciones.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem21});
+            listViewItem12});
             this.lvReservaciones.Location = new System.Drawing.Point(28, 456);
             this.lvReservaciones.MinimumSize = new System.Drawing.Size(200, 100);
             this.lvReservaciones.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -869,9 +904,10 @@ namespace ProyectoFinal_Hoteleria
             this.tabPage4.Location = new System.Drawing.Point(4, 23);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1136, 724);
+            this.tabPage4.Size = new System.Drawing.Size(1126, 769);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Mobiliarios";
+            this.tabPage4.Leave += new System.EventHandler(this.tabPage4_Leave);
             // 
             // pictureBox9
             // 
@@ -897,9 +933,9 @@ namespace ProyectoFinal_Hoteleria
             this.lvMobiliario.Depth = 0;
             this.lvMobiliario.FullRowSelect = true;
             this.lvMobiliario.HideSelection = false;
-            listViewItem22.StateImageIndex = 0;
+            listViewItem13.StateImageIndex = 0;
             this.lvMobiliario.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem22});
+            listViewItem13});
             this.lvMobiliario.Location = new System.Drawing.Point(28, 472);
             this.lvMobiliario.MinimumSize = new System.Drawing.Size(200, 100);
             this.lvMobiliario.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -964,9 +1000,9 @@ namespace ProyectoFinal_Hoteleria
             this.lvlHabitacionesMobiliario.Depth = 0;
             this.lvlHabitacionesMobiliario.FullRowSelect = true;
             this.lvlHabitacionesMobiliario.HideSelection = false;
-            listViewItem23.StateImageIndex = 0;
+            listViewItem14.StateImageIndex = 0;
             this.lvlHabitacionesMobiliario.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem23});
+            listViewItem14});
             this.lvlHabitacionesMobiliario.Location = new System.Drawing.Point(28, 112);
             this.lvlHabitacionesMobiliario.MinimumSize = new System.Drawing.Size(200, 100);
             this.lvlHabitacionesMobiliario.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1126,9 +1162,10 @@ namespace ProyectoFinal_Hoteleria
             this.tabPage5.ImageKey = "single-bed.png";
             this.tabPage5.Location = new System.Drawing.Point(4, 23);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1152, 763);
+            this.tabPage5.Size = new System.Drawing.Size(1126, 769);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Habitaciones";
+            this.tabPage5.Leave += new System.EventHandler(this.tabPage5_Leave);
             // 
             // pictureBox5
             // 
@@ -1156,9 +1193,9 @@ namespace ProyectoFinal_Hoteleria
             this.lvHabitaciones.Depth = 0;
             this.lvHabitaciones.FullRowSelect = true;
             this.lvHabitaciones.HideSelection = false;
-            listViewItem24.StateImageIndex = 0;
+            listViewItem11.StateImageIndex = 0;
             this.lvHabitaciones.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem24});
+            listViewItem11});
             this.lvHabitaciones.Location = new System.Drawing.Point(32, 96);
             this.lvHabitaciones.MinimumSize = new System.Drawing.Size(200, 100);
             this.lvHabitaciones.MouseLocation = new System.Drawing.Point(-1, -1);
@@ -1452,6 +1489,308 @@ namespace ProyectoFinal_Hoteleria
             this.txtCodHabitacion.Size = new System.Drawing.Size(150, 21);
             this.txtCodHabitacion.TabIndex = 1;
             // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.panel1);
+            this.tabPage6.ImageKey = "hotel (4).png";
+            this.tabPage6.Location = new System.Drawing.Point(4, 23);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1126, 769);
+            this.tabPage6.TabIndex = 6;
+            this.tabPage6.Text = "Hoteles";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            this.tabPage6.Leave += new System.EventHandler(this.tabPage6_Leave);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Snow;
+            this.panel1.Controls.Add(this.cardHotel);
+            this.panel1.Controls.Add(this.label28);
+            this.panel1.Controls.Add(this.cbxHoteles);
+            this.panel1.Controls.Add(this.label30);
+            this.panel1.Controls.Add(this.pictureBox16);
+            this.panel1.Controls.Add(this.cardHabitacionHotel);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1120, 763);
+            this.panel1.TabIndex = 0;
+            // 
+            // cardHotel
+            // 
+            this.cardHotel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cardHotel.Controls.Add(this.pictureBox17);
+            this.cardHotel.Controls.Add(this.label29);
+            this.cardHotel.Controls.Add(this.txtDireccionHotel);
+            this.cardHotel.Controls.Add(this.txtTelefonoHotel);
+            this.cardHotel.Controls.Add(this.label33);
+            this.cardHotel.Controls.Add(this.label36);
+            this.cardHotel.Controls.Add(this.txtNombreHotel);
+            this.cardHotel.Controls.Add(this.label37);
+            this.cardHotel.Controls.Add(this.label38);
+            this.cardHotel.Controls.Add(this.txtCodigoHotel);
+            this.cardHotel.Depth = 0;
+            this.cardHotel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cardHotel.Location = new System.Drawing.Point(25, 108);
+            this.cardHotel.Margin = new System.Windows.Forms.Padding(14);
+            this.cardHotel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cardHotel.Name = "cardHotel";
+            this.cardHotel.Padding = new System.Windows.Forms.Padding(14);
+            this.cardHotel.Size = new System.Drawing.Size(1024, 294);
+            this.cardHotel.TabIndex = 42;
+            this.cardHotel.Visible = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.user_interface__2_;
+            this.pictureBox17.Location = new System.Drawing.Point(943, 17);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox17.TabIndex = 24;
+            this.pictureBox17.TabStop = false;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(25, 26);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(143, 21);
+            this.label29.TabIndex = 23;
+            this.label29.Text = "Datos del hotel";
+            // 
+            // txtDireccionHotel
+            // 
+            this.txtDireccionHotel.Enabled = false;
+            this.txtDireccionHotel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtDireccionHotel.Location = new System.Drawing.Point(29, 200);
+            this.txtDireccionHotel.Multiline = true;
+            this.txtDireccionHotel.Name = "txtDireccionHotel";
+            this.txtDireccionHotel.Size = new System.Drawing.Size(775, 49);
+            this.txtDireccionHotel.TabIndex = 14;
+            // 
+            // txtTelefonoHotel
+            // 
+            this.txtTelefonoHotel.Enabled = false;
+            this.txtTelefonoHotel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtTelefonoHotel.Location = new System.Drawing.Point(619, 115);
+            this.txtTelefonoHotel.Name = "txtTelefonoHotel";
+            this.txtTelefonoHotel.Size = new System.Drawing.Size(185, 21);
+            this.txtTelefonoHotel.TabIndex = 13;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label33.Location = new System.Drawing.Point(616, 83);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(59, 16);
+            this.label33.TabIndex = 10;
+            this.label33.Text = "Teléfono";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label36.Location = new System.Drawing.Point(26, 166);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(62, 16);
+            this.label36.TabIndex = 5;
+            this.label36.Text = "Dirección";
+            // 
+            // txtNombreHotel
+            // 
+            this.txtNombreHotel.Enabled = false;
+            this.txtNombreHotel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtNombreHotel.Location = new System.Drawing.Point(216, 115);
+            this.txtNombreHotel.Name = "txtNombreHotel";
+            this.txtNombreHotel.Size = new System.Drawing.Size(343, 21);
+            this.txtNombreHotel.TabIndex = 4;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label37.Location = new System.Drawing.Point(216, 83);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(57, 16);
+            this.label37.TabIndex = 3;
+            this.label37.Text = "Nombre";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label38.Location = new System.Drawing.Point(26, 83);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(70, 16);
+            this.label38.TabIndex = 2;
+            this.label38.Text = "Cód. Hotel";
+            // 
+            // txtCodigoHotel
+            // 
+            this.txtCodigoHotel.Enabled = false;
+            this.txtCodigoHotel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.txtCodigoHotel.Location = new System.Drawing.Point(29, 115);
+            this.txtCodigoHotel.Name = "txtCodigoHotel";
+            this.txtCodigoHotel.Size = new System.Drawing.Size(127, 21);
+            this.txtCodigoHotel.TabIndex = 1;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label28.Location = new System.Drawing.Point(792, 35);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(94, 16);
+            this.label28.TabIndex = 41;
+            this.label28.Text = "Filtar por hotel";
+            // 
+            // cbxHoteles
+            // 
+            this.cbxHoteles.AutoResize = false;
+            this.cbxHoteles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cbxHoteles.Depth = 0;
+            this.cbxHoteles.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cbxHoteles.DropDownHeight = 174;
+            this.cbxHoteles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxHoteles.DropDownWidth = 121;
+            this.cbxHoteles.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cbxHoteles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cbxHoteles.FormattingEnabled = true;
+            this.cbxHoteles.Hint = "Seleccione...";
+            this.cbxHoteles.IntegralHeight = false;
+            this.cbxHoteles.ItemHeight = 43;
+            this.cbxHoteles.Location = new System.Drawing.Point(903, 22);
+            this.cbxHoteles.MaxDropDownItems = 4;
+            this.cbxHoteles.MouseState = MaterialSkin.MouseState.OUT;
+            this.cbxHoteles.Name = "cbxHoteles";
+            this.cbxHoteles.Size = new System.Drawing.Size(146, 49);
+            this.cbxHoteles.StartIndex = 0;
+            this.cbxHoteles.TabIndex = 40;
+            this.cbxHoteles.SelectedIndexChanged += new System.EventHandler(this.cbxHoteles_SelectedIndexChanged);
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label30.Location = new System.Drawing.Point(69, 39);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(77, 21);
+            this.label30.TabIndex = 35;
+            this.label30.Text = "Hoteles";
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.hotel__5_;
+            this.pictureBox16.Location = new System.Drawing.Point(25, 29);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(38, 36);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox16.TabIndex = 36;
+            this.pictureBox16.TabStop = false;
+            // 
+            // cardHabitacionHotel
+            // 
+            this.cardHabitacionHotel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cardHabitacionHotel.Controls.Add(this.lvHabitacionHotel);
+            this.cardHabitacionHotel.Controls.Add(this.label31);
+            this.cardHabitacionHotel.Depth = 0;
+            this.cardHabitacionHotel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cardHabitacionHotel.Location = new System.Drawing.Point(25, 444);
+            this.cardHabitacionHotel.Margin = new System.Windows.Forms.Padding(14);
+            this.cardHabitacionHotel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.cardHabitacionHotel.Name = "cardHabitacionHotel";
+            this.cardHabitacionHotel.Padding = new System.Windows.Forms.Padding(14);
+            this.cardHabitacionHotel.Size = new System.Drawing.Size(1024, 288);
+            this.cardHabitacionHotel.TabIndex = 45;
+            this.cardHabitacionHotel.Visible = false;
+            // 
+            // lvHabitacionHotel
+            // 
+            this.lvHabitacionHotel.AutoSizeTable = false;
+            this.lvHabitacionHotel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lvHabitacionHotel.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lvHabitacionHotel.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader26,
+            this.columnHeader27,
+            this.columnHeader28,
+            this.columnHeader29,
+            this.columnHeader30,
+            this.columnHeader31,
+            this.columnHeader32});
+            this.lvHabitacionHotel.Depth = 0;
+            this.lvHabitacionHotel.FullRowSelect = true;
+            this.lvHabitacionHotel.HideSelection = false;
+            listViewItem15.StateImageIndex = 0;
+            this.lvHabitacionHotel.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem15});
+            this.lvHabitacionHotel.Location = new System.Drawing.Point(29, 80);
+            this.lvHabitacionHotel.MinimumSize = new System.Drawing.Size(200, 100);
+            this.lvHabitacionHotel.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.lvHabitacionHotel.MouseState = MaterialSkin.MouseState.OUT;
+            this.lvHabitacionHotel.MultiSelect = false;
+            this.lvHabitacionHotel.Name = "lvHabitacionHotel";
+            this.lvHabitacionHotel.OwnerDraw = true;
+            this.lvHabitacionHotel.Size = new System.Drawing.Size(962, 184);
+            this.lvHabitacionHotel.TabIndex = 43;
+            this.lvHabitacionHotel.UseCompatibleStateImageBehavior = false;
+            this.lvHabitacionHotel.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader26
+            // 
+            this.columnHeader26.Text = "Cod. Habitación";
+            this.columnHeader26.Width = 150;
+            // 
+            // columnHeader27
+            // 
+            this.columnHeader27.Text = "Cod. Hotel";
+            this.columnHeader27.Width = 130;
+            // 
+            // columnHeader28
+            // 
+            this.columnHeader28.Text = "Soleada";
+            this.columnHeader28.Width = 100;
+            // 
+            // columnHeader29
+            // 
+            this.columnHeader29.Text = "Lavado";
+            this.columnHeader29.Width = 100;
+            // 
+            // columnHeader30
+            // 
+            this.columnHeader30.Text = "Nevera";
+            this.columnHeader30.Width = 100;
+            // 
+            // columnHeader31
+            // 
+            this.columnHeader31.Text = "Categoría";
+            this.columnHeader31.Width = 200;
+            // 
+            // columnHeader32
+            // 
+            this.columnHeader32.Text = "Precio";
+            this.columnHeader32.Width = 180;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label31.Location = new System.Drawing.Point(31, 27);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(125, 21);
+            this.label31.TabIndex = 44;
+            this.label31.Text = "Habitaciones";
+            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.Snow;
@@ -1464,7 +1803,7 @@ namespace ProyectoFinal_Hoteleria
             this.tabPage3.ImageKey = "information-button_menu.png";
             this.tabPage3.Location = new System.Drawing.Point(4, 23);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1136, 724);
+            this.tabPage3.Size = new System.Drawing.Size(1126, 769);
             this.tabPage3.TabIndex = 5;
             this.tabPage3.Text = "Acerca De";
             // 
@@ -1541,6 +1880,7 @@ namespace ProyectoFinal_Hoteleria
             this.imageList1.Images.SetKeyName(3, "hotel (1).png");
             this.imageList1.Images.SetKeyName(4, "home_menu.png");
             this.imageList1.Images.SetKeyName(5, "information-button_menu.png");
+            this.imageList1.Images.SetKeyName(6, "hotel (4).png");
             // 
             // pictureBox1
             // 
@@ -1557,7 +1897,7 @@ namespace ProyectoFinal_Hoteleria
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
-            this.ClientSize = new System.Drawing.Size(1166, 854);
+            this.ClientSize = new System.Drawing.Size(1140, 860);
             this.Controls.Add(this.materialTabControl1);
             this.Controls.Add(this.Hotel);
             this.Controls.Add(this.pictureBox1);
@@ -1568,6 +1908,7 @@ namespace ProyectoFinal_Hoteleria
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form";
             this.Padding = new System.Windows.Forms.Padding(3, 64, 3, 0);
+            this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reservación Hotelera";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -1602,6 +1943,15 @@ namespace ProyectoFinal_Hoteleria
             this.cardDatosHabitacion.ResumeLayout(false);
             this.cardDatosHabitacion.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.cardHotel.ResumeLayout(false);
+            this.cardHotel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            this.cardHabitacionHotel.ResumeLayout(false);
+            this.cardHabitacionHotel.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -1733,6 +2083,33 @@ namespace ProyectoFinal_Hoteleria
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label28;
+        private MaterialSkin.Controls.MaterialComboBox cbxHoteles;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.PictureBox pictureBox16;
+        private MaterialSkin.Controls.MaterialCard cardHotel;
+        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.TextBox txtDireccionHotel;
+        private System.Windows.Forms.TextBox txtTelefonoHotel;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.TextBox txtNombreHotel;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.TextBox txtCodigoHotel;
+        private MaterialSkin.Controls.MaterialCard cardHabitacionHotel;
+        private MaterialSkin.Controls.MaterialListView lvHabitacionHotel;
+        private System.Windows.Forms.ColumnHeader columnHeader26;
+        private System.Windows.Forms.ColumnHeader columnHeader27;
+        private System.Windows.Forms.ColumnHeader columnHeader28;
+        private System.Windows.Forms.ColumnHeader columnHeader29;
+        private System.Windows.Forms.ColumnHeader columnHeader30;
+        private System.Windows.Forms.ColumnHeader columnHeader31;
+        private System.Windows.Forms.ColumnHeader columnHeader32;
+        private System.Windows.Forms.Label label31;
     }
 }
 

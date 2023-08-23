@@ -79,5 +79,10 @@ namespace ProyectoFinal_Hoteleria
                 modal.ShowDialog();
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

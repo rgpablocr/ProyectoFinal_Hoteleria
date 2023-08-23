@@ -49,6 +49,7 @@
     <Compile Include="MobiliarioHabitacion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reservacion.cs" />
+    <Compile Include="Usuario.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

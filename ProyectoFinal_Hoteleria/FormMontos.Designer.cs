@@ -29,9 +29,11 @@ namespace ProyectoFinal_Hoteleria
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnBack = new System.Windows.Forms.PictureBox();
             this.lblTotal = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.lblUnitario = new System.Windows.Forms.Label();
@@ -40,6 +42,7 @@ namespace ProyectoFinal_Hoteleria
             this.cbxLavado = new System.Windows.Forms.CheckBox();
             this.cbxNevera = new System.Windows.Forms.CheckBox();
             this.cbxSoleado = new System.Windows.Forms.CheckBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txtPrecioFinal = new System.Windows.Forms.TextBox();
             this.txtCodHotel = new System.Windows.Forms.TextBox();
@@ -62,12 +65,11 @@ namespace ProyectoFinal_Hoteleria
             this.lblTelefonoHotel = new System.Windows.Forms.Label();
             this.lblDireccionHotel = new System.Windows.Forms.Label();
             this.lblNombreHotel = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.cardDatosHabitacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -76,7 +78,7 @@ namespace ProyectoFinal_Hoteleria
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(93, 34);
+            this.label2.Location = new System.Drawing.Point(105, 112);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(198, 21);
             this.label2.TabIndex = 14;
@@ -85,6 +87,8 @@ namespace ProyectoFinal_Hoteleria
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Snow;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.btnBack);
             this.panel1.Controls.Add(this.lblTotal);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.lblUnitario);
@@ -101,19 +105,39 @@ namespace ProyectoFinal_Hoteleria
             this.panel1.Controls.Add(this.lblDireccionHotel);
             this.panel1.Controls.Add(this.lblNombreHotel);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 64);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(949, 789);
+            this.panel1.Size = new System.Drawing.Size(914, 833);
             this.panel1.TabIndex = 16;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.hotel__7_3;
+            this.pictureBox1.Location = new System.Drawing.Point(39, 93);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 49);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 54;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.arrow;
+            this.btnBack.Location = new System.Drawing.Point(39, 24);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(32, 32);
+            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnBack.TabIndex = 53;
+            this.btnBack.TabStop = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblTotal.Location = new System.Drawing.Point(804, 682);
+            this.lblTotal.Location = new System.Drawing.Point(807, 762);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblTotal.Size = new System.Drawing.Size(73, 19);
@@ -125,7 +149,7 @@ namespace ProyectoFinal_Hoteleria
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label11.Location = new System.Drawing.Point(668, 677);
+            this.label11.Location = new System.Drawing.Point(671, 757);
             this.label11.Name = "label11";
             this.label11.Padding = new System.Windows.Forms.Padding(0, 5, 5, 15);
             this.label11.Size = new System.Drawing.Size(50, 39);
@@ -137,7 +161,7 @@ namespace ProyectoFinal_Hoteleria
             this.lblUnitario.AutoSize = true;
             this.lblUnitario.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUnitario.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblUnitario.Location = new System.Drawing.Point(804, 643);
+            this.lblUnitario.Location = new System.Drawing.Point(807, 723);
             this.lblUnitario.Name = "lblUnitario";
             this.lblUnitario.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblUnitario.Size = new System.Drawing.Size(73, 19);
@@ -149,7 +173,7 @@ namespace ProyectoFinal_Hoteleria
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Gadugi", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label16.Location = new System.Drawing.Point(668, 638);
+            this.label16.Location = new System.Drawing.Point(671, 718);
             this.label16.Name = "label16";
             this.label16.Padding = new System.Windows.Forms.Padding(0, 5, 5, 15);
             this.label16.Size = new System.Drawing.Size(111, 39);
@@ -171,7 +195,7 @@ namespace ProyectoFinal_Hoteleria
             this.cardDatosHabitacion.Controls.Add(this.txtCodHabitacion);
             this.cardDatosHabitacion.Depth = 0;
             this.cardDatosHabitacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cardDatosHabitacion.Location = new System.Drawing.Point(37, 256);
+            this.cardDatosHabitacion.Location = new System.Drawing.Point(40, 336);
             this.cardDatosHabitacion.Margin = new System.Windows.Forms.Padding(14);
             this.cardDatosHabitacion.MouseState = MaterialSkin.MouseState.HOVER;
             this.cardDatosHabitacion.Name = "cardDatosHabitacion";
@@ -214,6 +238,15 @@ namespace ProyectoFinal_Hoteleria
             this.cbxSoleado.TabIndex = 24;
             this.cbxSoleado.Text = "Es Soleado";
             this.cbxSoleado.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(771, 28);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(51, 53);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 23;
+            this.pictureBox3.TabStop = false;
             // 
             // label14
             // 
@@ -276,7 +309,7 @@ namespace ProyectoFinal_Hoteleria
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(33, 209);
+            this.label12.Location = new System.Drawing.Point(36, 289);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(196, 21);
             this.label12.TabIndex = 45;
@@ -288,7 +321,7 @@ namespace ProyectoFinal_Hoteleria
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Gadugi", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(33, 458);
+            this.label7.Location = new System.Drawing.Point(36, 538);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(205, 21);
             this.label7.TabIndex = 43;
@@ -309,10 +342,10 @@ namespace ProyectoFinal_Hoteleria
             this.lvReservaciones.Depth = 0;
             this.lvReservaciones.FullRowSelect = true;
             this.lvReservaciones.HideSelection = false;
-            listViewItem4.StateImageIndex = 0;
+            listViewItem2.StateImageIndex = 0;
             this.lvReservaciones.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem4});
-            this.lvReservaciones.Location = new System.Drawing.Point(38, 501);
+            listViewItem2});
+            this.lvReservaciones.Location = new System.Drawing.Point(41, 581);
             this.lvReservaciones.MinimumSize = new System.Drawing.Size(200, 100);
             this.lvReservaciones.MouseLocation = new System.Drawing.Point(-1, -1);
             this.lvReservaciones.MouseState = MaterialSkin.MouseState.OUT;
@@ -358,7 +391,7 @@ namespace ProyectoFinal_Hoteleria
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefono.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblTelefono.Location = new System.Drawing.Point(660, 158);
+            this.lblTelefono.Location = new System.Drawing.Point(659, 235);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblTelefono.Size = new System.Drawing.Size(59, 16);
@@ -370,7 +403,7 @@ namespace ProyectoFinal_Hoteleria
             this.lblCedula.AutoSize = true;
             this.lblCedula.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCedula.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblCedula.Location = new System.Drawing.Point(660, 86);
+            this.lblCedula.Location = new System.Drawing.Point(659, 163);
             this.lblCedula.Name = "lblCedula";
             this.lblCedula.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblCedula.Size = new System.Drawing.Size(61, 16);
@@ -382,7 +415,7 @@ namespace ProyectoFinal_Hoteleria
             this.lblCorreo.AutoSize = true;
             this.lblCorreo.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorreo.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblCorreo.Location = new System.Drawing.Point(660, 123);
+            this.lblCorreo.Location = new System.Drawing.Point(659, 200);
             this.lblCorreo.Name = "lblCorreo";
             this.lblCorreo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblCorreo.Size = new System.Drawing.Size(144, 16);
@@ -395,7 +428,7 @@ namespace ProyectoFinal_Hoteleria
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Gadugi", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblNombre.Location = new System.Drawing.Point(660, 46);
+            this.lblNombre.Location = new System.Drawing.Point(659, 114);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblNombre.Size = new System.Drawing.Size(225, 19);
@@ -408,7 +441,7 @@ namespace ProyectoFinal_Hoteleria
             this.lblTelefonoHotel.AutoSize = true;
             this.lblTelefonoHotel.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefonoHotel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblTelefonoHotel.Location = new System.Drawing.Point(34, 158);
+            this.lblTelefonoHotel.Location = new System.Drawing.Point(36, 235);
             this.lblTelefonoHotel.Name = "lblTelefonoHotel";
             this.lblTelefonoHotel.Size = new System.Drawing.Size(64, 16);
             this.lblTelefonoHotel.TabIndex = 37;
@@ -419,7 +452,7 @@ namespace ProyectoFinal_Hoteleria
             this.lblDireccionHotel.AutoSize = true;
             this.lblDireccionHotel.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDireccionHotel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblDireccionHotel.Location = new System.Drawing.Point(35, 123);
+            this.lblDireccionHotel.Location = new System.Drawing.Point(37, 200);
             this.lblDireccionHotel.Name = "lblDireccionHotel";
             this.lblDireccionHotel.Size = new System.Drawing.Size(95, 16);
             this.lblDireccionHotel.TabIndex = 36;
@@ -430,37 +463,17 @@ namespace ProyectoFinal_Hoteleria
             this.lblNombreHotel.AutoSize = true;
             this.lblNombreHotel.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreHotel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblNombreHotel.Location = new System.Drawing.Point(34, 86);
+            this.lblNombreHotel.Location = new System.Drawing.Point(36, 163);
             this.lblNombreHotel.Name = "lblNombreHotel";
             this.lblNombreHotel.Size = new System.Drawing.Size(92, 16);
             this.lblNombreHotel.TabIndex = 34;
             this.lblNombreHotel.Text = "Nombre Hotel";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.bedroom1;
-            this.pictureBox3.Location = new System.Drawing.Point(771, 28);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(51, 53);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 23;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::ProyectoFinal_Hoteleria.Properties.Resources.hotel__3_1;
-            this.pictureBox6.Location = new System.Drawing.Point(37, 23);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(50, 42);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 15;
-            this.pictureBox6.TabStop = false;
-            // 
             // FormMontos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(955, 856);
+            this.ClientSize = new System.Drawing.Size(920, 900);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormMontos";
@@ -470,17 +483,16 @@ namespace ProyectoFinal_Hoteleria
             this.Load += new System.EventHandler(this.FormMontos_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.cardDatosHabitacion.ResumeLayout(false);
             this.cardDatosHabitacion.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblDireccionHotel;
@@ -514,5 +526,7 @@ namespace ProyectoFinal_Hoteleria
         private System.Windows.Forms.Label lblUnitario;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label lblNombreHotel;
+        private System.Windows.Forms.PictureBox btnBack;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
